@@ -9,19 +9,25 @@
     <title>Tic Tac Toe</title>
 </head>
 <body>
-    <section class="welcome-container">
+<section class="welcome-container">
     <h1>Tic Tac Toe</h1>
+
+    <div class="choise-container">
     <p>Welcome to this game, do you dare to play with me?</p>
-    <button type="button" onclick="letsPlay()" class="choise-button" id="yes">OFC!</button>
+    <button type="button" onclick="letsPlay()" class="button" id="yes">OFC!</button>
+    <button type="button" onclick="dontPlay()" class="choise-button" id="no">No way...</button>
+    </div>
+
+    <div id="message-container1">
     <p id="message1"></p>
-    <div id="play-game">
     <input type="text" id="input-name">
     <button type="submit" id="start-button">START!</button>
     </div>
 
-    <button onclick="dontPlay()" class="choise-button" id="no">No way...</button>
+    <div id="message-container2">
     <p id="message2"></p>
-    </section>
+    </div>
+</section>
    
     <script src ="assets/js/script.js"></script>
 </body>

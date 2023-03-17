@@ -1,6 +1,6 @@
 body {
-    text-align: center;
     background-color: black;
+    text-align: center;
 }
 
 /* Welcome page */
@@ -12,6 +12,7 @@ h1 {
 
 p {
     margin-top: 30px;
+    
 }
 
 .welcome-container {
@@ -23,6 +24,7 @@ p {
     margin-top: 100px;
 }
 
+/* are displayed after clicked OFC button */
 #input-name {
     display: none;
     margin-left: auto;
@@ -39,18 +41,3 @@ p {
     padding: 5px;
 
 }
-
-.button {
-    margin-top: 20px;
-}
-
-#yes {
-    float: left;
-    margin-left: 300px;
-}
-
-#no {
-    float: right;
-    margin-right: 300px;
-}
-  
