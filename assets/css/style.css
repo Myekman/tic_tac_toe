@@ -3,6 +3,8 @@ body {
     background-color: black;
 }
 
+/* Welcome page */
+
 h1 {
     padding-top: 30px;
 
@@ -12,7 +14,7 @@ p {
     margin-top: 30px;
 }
 
-.game {
+.welcome-container {
     height: 800px;
     width: 800px;
     background-color: aqua;
@@ -21,7 +23,34 @@ p {
     margin-top: 100px;
 }
 
-.name {
-    color: red;
+#input-name {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#start-button {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 80px;
+    padding: 5px;
+
+}
+
+.button {
+    margin-top: 20px;
+}
+
+#yes {
+    float: left;
+    margin-left: 300px;
+}
+
+#no {
+    float: right;
+    margin-right: 300px;
 }
   
