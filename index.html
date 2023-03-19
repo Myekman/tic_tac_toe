@@ -12,22 +12,32 @@
 <section class="welcome-container">
     <h1>Tic Tac Toe</h1>
 
-    <div class="choise-container">
-    <p>Welcome to this game, do you dare to play with me?</p>
-    <button type="button" onclick="letsPlay()" class="button" id="yes">OFC!</button>
-    <button type="button" onclick="dontPlay()" class="choise-button" id="no">No way...</button>
-    </div>
+    <section id="welcome-section">
+        <div class="choise-container">
+        <p>Welcome to this game, do you dare to play with me?</p>
+        <button type="button" onclick="letsPlay()" class="button" id="yes">OFC!</button>
+        <button type="button" onclick="dontPlay()" class="choise-button" id="no">No way...</button>
+        </div>
+    </section>
 
-    <div id="message-container1">
-    <p id="message1"></p>
-    <input type="text" id="input-name">
-    <button type="submit" id="start-button">START!</button>
-    </div>
+    <section id="message-section">
+        <div id="message-container2">
+        <p id="message2"></p>
+        </div>
+    </section>
 
-    <div id="message-container2">
-    <p id="message2"></p>
-    </div>
+    <section id="name-section">
+        <div>
+            <input type="text" id="input-name">
+            <button onclick="start()" type="button" id="start-button">START!</button>
+        </div>
+    </section>
+
+    <section id="game-section">
+
+    </section>
 </section>
+
    
     <script src ="assets/js/script.js"></script>
 </body>
