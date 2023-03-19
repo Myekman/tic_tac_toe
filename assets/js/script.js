@@ -9,6 +9,9 @@ function letsPlay() {
     name.style.display = "block";
     document.getElementById("input-name").style.display = "inline";
     document.getElementById("start-button").style.display = "inline";
+
+    let welcome=document.querySelector("#welcome-section");
+    welcome.style.display= "none";
 }
 
 /* choise the button not to play */ 
@@ -38,4 +41,22 @@ function start() {
         div.style.display = 'none';
         display = 1;
     }
+
+    if(document.getElementById("input-name").value.length == 0)
+    {
+        alert("please enter your name to play")
+        /* return or some code here?? */
+    }
+    else 
+    {
+        runGame()
+        let game=document.querySelector("#run-game");
+        game.style.display = "block";
+    }
+
 }
+
+function runGame() {
+
+}
+
