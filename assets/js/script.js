@@ -1,5 +1,5 @@
 
-/* choise the button to play */ 
+/* clicked button to play */ 
 function letsPlay() {
 
     let message2;
@@ -8,18 +8,16 @@ function letsPlay() {
     name.style.display = "block";
     document.getElementById("input-name").style.display = "inline";
     document.getElementById("start-button").style.display = "inline";
-
-/*elements not to show */ 
+    
     let welcome=document.querySelector("#welcome-section");
     welcome.style.display= "none";
 }
 
-/* choise the button not to play */ 
+/* clicked button not to play */ 
 function dontPlay() {
     let message2;
     document.getElementById("message").innerHTML = "That's too bad.. Maybee another time!"  
 
-/*elements not to show */ 
     let name=document.querySelector("#name-section");
     name.style.display = "none";
     let welcome=document.querySelector("#welcome-section");
@@ -31,7 +29,7 @@ function start() {
     if(document.getElementById("input-name").value.length == 0)
     {
         alert("please enter your name to play")
-        /*some code here needed*/
+
     }
     else 
     {

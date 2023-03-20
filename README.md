@@ -1,108 +1,190 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Tic Tac Toe 
+This game......
 
-Welcome Myekman,
+![IMG]()
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+A live version of the webbsite can be found here! [Tic Tac Toe](https://myekman.github.io/tic_tac_toe/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## User Stories
 
-## Gitpod Reminders
+What i can do as a visitor to this game:
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+* Choise if i want to start game or not.
+* If yes, i can enter my Name to start play.
+* If no, i can change my mind and return to enter my name. 
+* As a player, I want to be notified on who wins and see the final result.
+* As a player, I want to be able to start a new game.
+* As a player, I want to be able to play the game on different devices and screen sizes. 
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+## Design 
 
-Another blue button should appear to click: _Open Browser_.
+* Since this is the first webbsite i ever done, the structure and design are inspired of the Love Running Project. 
+*The color palette was at first inspired of the pictures i found at pexels.com. I know i wanted something pink and light from the start. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## WireFrames
 
-A blue button should appear to click: _Make Public_,
+## Typography
 
-Another blue button should appear to click: _Open Browser_.
+* The typograpfy was imported from [Google fonts](https://fonts.google.com/) and pasted in style.css file. 
+* For the headings i use [Bebas Neue](https://fonts.google.com/specimen/Bebas+Neue?query=bebas+neue) (Regular 400), with a fallback of Sans-Serif.
+* For the paragraphs and links i use [Bitter](https://fonts.google.com/specimen/Bitter) (Light 300),  with a fallback of Sans-Serif. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Images 
 
-To log into the Heroku toolbelt CLI:
+* I chose the images for the clean feel. As they look clean and contain few colors them are easy to match with the rest of the design.
+* Size of images are customized to fit the rest of the page structure. 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Technologies used:
+* CSS
+* HTML
+* JavaScript
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+# Table of content
 
-------
+### List of features:
 
-## Release History
+* [Logo](#logo "Logo")
+* [Welcome section](#welcome-section "Welcome section")
+* [Name section](#name-section "Name section")
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### UX/UI:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* [User Stories](#user-stories "User Stories")
+* [Requirements](#requirements "Requirements")
+* [Design](#design "Design")
+* [Typography](#typography "Typography")
+* [Images](#images "Images")
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### List of testing
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* [Testing](#testing "Testing")
+* [Manual Testning](#manual-testing "Manual Testing")
+* [HTML Validator](#html "HTML")
+* [CSS Validator](#css "CSS")
+* [Lighthouse](#lighthouse "Lighthouse")
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Develop and Deployment
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* [Deployment](#deployment "Deployment")
+* [Content](#content "Content")
+* [Media](#media "Media")
+* [Credits](#credits "Credits")
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Features 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Logo
+### Welcome section
+### Name section
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Testing 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+Here is a list of issues discovered and how they were solved. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+1. The link to get to form section didnt work. 
+*  Solution: Addthe"#" to a href=#form-section. 
+2. Images in gymnastic studios section disapered when i styled the page to smaller screen sizes. 
+*  Solution: I set the float to left for the image in the middle from margin: 0 auto. 
+3. Images was shown just at its bottom.
+*  Solution: Set the background-position to center. 
+4. The contet i wanted to add above images in gymnastic gruops section didnt show up.
+*  Solution: Change to right section id. 
+5. Poor performance on smaller screens.
+* Solution: Fixed by using by media queries. 
+6. The circle image beside the form that is floated to left, didn't appear to the right as att wished. 
+* Solution: set the clear attribute to none. 
+7. The sign upp here link didn't work from classes.html page.
+* Solution: Added form section to classes.html page and the link was working. 
+8. Apart from these problems i have had a ton of small ones. It can be for example that contet not fall in the right place i wish for.
+* It has been solved with attribute of example: padding, margin, float, text-align.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Unfixed bugs 
 
-------
+All the bugs were fixed and moved to the section Testing.
 
-## FAQ about the uptime script
+## Manual Testing 
 
-**Why have you added this script?**
+### Home navigation bar:
+They all works like expected: When click on the links it takes me to 
+home, about us, classes.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### More links & social media links: 
+* "Sign upp!" link in header works as expected, it takes me to form.
+* "Read more" link in gymnastic groups section works as expected, it takes me to classes.html page. 
+* Social media links in footer works like expected, takes me to facebook and instagram when clicked. 
 
-**How will this affect me?**
+### Form submit button:
+Workes as expected, the form sucessfully submitted on click and take me to formdump page. 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## HTML 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+* Testing of the site has been done several times during this project. To ensure that the page is suitable for different screen sizes, I have used Google DevTools and Also with: [Am I Responsive](https://ui.dev/amiresponsive).
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+* Test has been conducted using Google Chrome, Mozilla Firefox and Safari.
 
-**So….?**
+![IMG](/assets/images/html-validate.png)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+* No errors were showed when passing thrue HTML [3Wc Validator](https://jigsaw.w3.org/css-validator/). 
+* All three pages was tested and all passed validator. 
 
-**Can I opt out?**
+## CSS
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![IMG](/assets/images/W3C-validator1.png)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+* No errors were showed when passing thrue CSS [Jigsaw Validator](https://jigsaw.w3.org/css-validator/). 
 
-**Anything more?**
+## Lighthouse 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+![IMG](/assets/images/lighthouse1.png)
 
----
+* The results of Lighthouse testing above.
 
-Happy coding!
+## Deployment 
+
+The development environment used for this webbsite was GitPod. In GitPod a template enviorment was used provided by Code Institute.
+
+Regular commits and pushes to GitHub have been implemented to save through  development.
+
+The procedure for deployment was followed by the video from Love Running. 
+
+1. Log into GitHub.
+2. Find the Repository that you want to deploy live.
+3. At the top of the repository, select Settings.
+4. Click "Pages" to the left in menu. 
+5. The ”Source” should be "deploy from branch". Then choose Branch as ”main” and "root" as folder and click ”Save”.
+6. The website will deploy and the link to live webbsite will be ready when refresh the page. 
+
+## Content
+* All text content on this site has been produced by the author of the project and is fictional. There is no Strong Gymnastic Studio in real life. 
+* All CSS and HTML is ispired of the Love Running project, HTML and CSS Essentials and from [w3schools](https://www.w3schools.com/tags/tag_em.asp).  
+* The social media icons in the footer was taken from [Font Awesome](https://fontawesome.com/icons/dumbbell?s=solid&f=classic).
+
+## Media
+
+* All images was downloaded from [pexels](https://www.pexels.com/).
+
+## Credits 
+
+Martina Terlevic
+
+* My fantastic mentor at Code Institute
+
+And also all awesome people att slack code institute community who are warm and helpful every time. 
+
+## Great sources
+
+https://www.w3schools.com/ 
+
+### Vidoes that helped me true this project
+https://www.youtube.com/watch?v=-oQnDrNzTTA
+
+Image in top that present site in differns devices are made with:
+
+http://ami.responsivedesign.is/
+
+Best Regards 
+
+[back to top](#strong-gymnastic-studio "Strong Gymnasic Studio")
