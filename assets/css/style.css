@@ -1,6 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: black;
     text-align: center;
+    
 }
 
 /* Welcome page */
@@ -24,7 +30,7 @@ p {
     margin-top: 100px;
 }
 
-/* are displayed after clicked OFC button */
+/* elements displayed after clicked OFC button */
 #input-name {
     display: none;
     margin-left: auto;
@@ -42,6 +48,37 @@ p {
 
 }
 
-#run-game {
+/* Game Section */
+#game-section {
+    height: 800px;
     display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#game-board {
+    display: flex;
+    width: 30%;
+    height: 200px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 2px;
+    margin-top: 20px;
+}
+
+.box {
+    height: 60px;
+    width: 60px;
+    border: #3D3D3D 1px solid;
+    border-radius: 2px;
+    margin: 1px;
+    text-align: center;
+    cursor: pointer;
+   
+}
+
+#restartbtn {
+    margin-top: 20px;
 }

@@ -1,51 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <title>Tic Tac Toe</title>
 </head>
+
 <body>
-<section class="welcome-container">
-    <h1>Tic Tac Toe</h1>
-    <div id="fist-page">
+    <section class="welcome-container">
+        <h1>Tic Tac Toe</h1>
+        <div id="fist-page">
 
-    <section id="welcome-section">
-        <div class="choise-container">
-        <p>Welcome to this game, do you dare to play with me?</p>
-        <button type="button" onclick="letsPlay()" class="button" id="yes">OFC!</button>
-        <button type="button" onclick="dontPlay()" class="choise-button" id="no">No way...</button>
+            <section id="welcome-section">
+                <div class="choise-container">
+                    <h1>Welcome to this game, do you dare to play with me?</h1>
+                    <button type="button" onclick="letsPlay()" class="button" id="yes">OFC!</button>
+                    <button type="button" onclick="dontPlay()" class="choise-button" id="no">No way...</button>
+                </div>
+            </section>
+
+            <section id="message-section">
+                <div id="message-container2">
+                    <h1 id="message"></h1>
+                </div>
+            </section>
+
+            <section id="name-section">
+                <div id="name-container">
+                    <input type="text" id="input-name" placeholder="My name is...">
+                    <button onclick="start()" type="button" id="start-button">START!</button>
+                </div>
+            </section>
         </div>
+
+        <section id="game-section">
+                <h1>lets play!</h1>
+                <button id="restartbtn">Restart</button>
+
+            <div id="game-board">
+                <div id="0" class="box"></div>
+                <div id="1" class="box"></div>
+                <div id="2" class="box"></div>
+                <br>
+                <div id="3" class="box"></div>
+                <div id="4" class="box"></div>
+                <div id="5" class="box"></div>
+                <br>
+                <div id="6" class="box"></div>
+                <div id="7" class="box"></div>
+                <div id="8" class="box"></div>
+            </div>
+        </section>
     </section>
 
-    <section id="message-section">
-        <div id="message-container2">
-        <p id="message"></p>
-        </div>
-    </section>
 
-    <section id="name-section">
-        <div id="name-container">
-            <input type="text" id="input-name" placeholder="My name is...">
-            <button onclick="start()" type="button" id="start-button">START!</button>
-        </div>
-    </section>
-    </div>
-
-    <section id="game-section">
-        <div id="run-game">
-            <p>lets play!</p>
-
-        </div>
-        
-
-    </section>
-</section>
-
-   
-    <script src ="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>

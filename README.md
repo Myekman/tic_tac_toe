@@ -3,44 +3,12 @@ This game......
 
 ![IMG]()
 
-A live version of the webbsite can be found here! [Tic Tac Toe](https://myekman.github.io/tic_tac_toe/)
-
-## User Stories
-
-What i can do as a visitor to this game:
-
-* Choise if i want to start game or not.
-* If yes, i can enter my Name to start play.
-* If no, i can change my mind and return to enter my name. 
-* As a player, I want to be notified on who wins and see the final result.
-* As a player, I want to be able to start a new game.
-* As a player, I want to be able to play the game on different devices and screen sizes. 
-
-
-## Design 
-
-* Since this is the first webbsite i ever done, the structure and design are inspired of the Love Running Project. 
-*The color palette was at first inspired of the pictures i found at pexels.com. I know i wanted something pink and light from the start. 
-
-## WireFrames
-
-## Typography
-
-* The typograpfy was imported from [Google fonts](https://fonts.google.com/) and pasted in style.css file. 
-* For the headings i use [Bebas Neue](https://fonts.google.com/specimen/Bebas+Neue?query=bebas+neue) (Regular 400), with a fallback of Sans-Serif.
-* For the paragraphs and links i use [Bitter](https://fonts.google.com/specimen/Bitter) (Light 300),  with a fallback of Sans-Serif. 
-
-## Images 
-
-* I chose the images for the clean feel. As they look clean and contain few colors them are easy to match with the rest of the design.
-* Size of images are customized to fit the rest of the page structure. 
-
-## Technologies used:
-* CSS
-* HTML
-* JavaScript
+A live version of this game can be found here! [Tic Tac Toe](https://myekman.github.io/tic_tac_toe/)
 
 # Table of content
+
+### Wireframes
+* [Wireframed](#wireframes "Wireframes")
 
 ### List of features:
 
@@ -72,6 +40,41 @@ What i can do as a visitor to this game:
 * [Media](#media "Media")
 * [Credits](#credits "Credits")
 
+## User Stories
+
+What i can do as a visitor to this game:
+
+* Choise if i want to start game or not.
+* If yes, i can enter my Name to start play.
+* If no, i can change my mind and return to enter my name. 
+* As a player, I want to be notified on who wins and see the final result.
+* As a player, I want to be able to start a new game.
+* As a player, I want to be able to play the game on different devices and screen sizes. 
+
+
+## Design 
+
+* Since this is the first webbsite i ever done, the structure and design are inspired of the Love Running Project. 
+*The color palette was at first inspired of the pictures i found at pexels.com. I know i wanted something pink and light from the start. 
+
+## Wireframes
+
+## Typography
+
+* The typograpfy was imported from [Google fonts](https://fonts.google.com/) and pasted in style.css file. 
+* For the headings i use [Bebas Neue](https://fonts.google.com/specimen/Bebas+Neue?query=bebas+neue) (Regular 400), with a fallback of Sans-Serif.
+* For the paragraphs and links i use [Bitter](https://fonts.google.com/specimen/Bitter) (Light 300),  with a fallback of Sans-Serif. 
+
+## Images 
+
+* I chose the images for the clean feel. As they look clean and contain few colors them are easy to match with the rest of the design.
+* Size of images are customized to fit the rest of the page structure. 
+
+## Technologies used:
+* CSS
+* HTML
+* JavaScript
+
 ## Features 
 
 ### Logo
@@ -80,7 +83,6 @@ What i can do as a visitor to this game:
 
 
 ## Testing 
-
 
 Here is a list of issues discovered and how they were solved. 
 
@@ -106,20 +108,10 @@ Here is a list of issues discovered and how they were solved.
 All the bugs were fixed and moved to the section Testing.
 
 ## Manual Testing 
+* Add text here of manuel testing
 
-### Home navigation bar:
-They all works like expected: When click on the links it takes me to 
-home, about us, classes.
-
-### More links & social media links: 
-* "Sign upp!" link in header works as expected, it takes me to form.
-* "Read more" link in gymnastic groups section works as expected, it takes me to classes.html page. 
-* Social media links in footer works like expected, takes me to facebook and instagram when clicked. 
-
-### Form submit button:
-Workes as expected, the form sucessfully submitted on click and take me to formdump page. 
-
-## HTML 
+## Testing with validator
+### HTML 
 
 * Testing of the site has been done several times during this project. To ensure that the page is suitable for different screen sizes, I have used Google DevTools and Also with: [Am I Responsive](https://ui.dev/amiresponsive).
 
@@ -187,4 +179,4 @@ http://ami.responsivedesign.is/
 
 Best Regards 
 
-[back to top](#strong-gymnastic-studio "Strong Gymnasic Studio")
+[back to top](#tic-tac-toe "Tic Tac Toe")

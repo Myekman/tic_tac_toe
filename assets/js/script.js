@@ -47,15 +47,15 @@ function start() {
             display = 1;
         }
 
-        runGame()
-        let game=document.querySelector("#run-game");
+        gameSection()
+        let game=document.querySelector("#game-section");
         game.style.display = "block";
         
     }
 
 }
 
-function runGame() {
+function gameSection() {
 
 }
 
