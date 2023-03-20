@@ -54,40 +54,66 @@ p {
     justify-content: center;
 }
 
-#player1 {
+.player1-container {
 float: right;
 margin-top: 40px;
 margin-right: 40px;
+background-color: red;
 }
 
-#player2 {
+.player2-container {
 float: left;
 margin-top: 40px;
 margin-left: 40px;
 }
 
-#game-board {
+.container {
     display: flex;
-    width: 30%;
-    height: 200px;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-content: center;
-    margin: 2px;
-    margin-top: 20px;
+    margin-top: 1rem;
+
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 .box {
-    height: 60px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
     border: #3D3D3D 1px solid;
-    border-radius: 2px;
-    margin: 1px;
+    font-size: 50px;
     text-align: center;
+    line-height: 95px;
     cursor: pointer;
    
 }
+
+.box:first-child,
+.box:nth-child(2),
+.box:nth-child(3) {
+    border-top: none;
+
+}
+
+.box:nth-child(3n + 1) {
+    border-left: none;
+}
+
+.box:nth-child(3n + 3) {
+    border-right: none;
+}
+
+.box:last-child,
+.box:nth-child(8),
+.box:nth-child(7) {
+    border-bottom: none;
+
+}
+
 
 #restartbtn {
     margin-top: 20px;
