@@ -4,7 +4,6 @@
 }
 
 body {
-    background-color: black;
     text-align: center;
     
 }
@@ -50,10 +49,21 @@ p {
 
 /* Game Section */
 #game-section {
-    height: 800px;
     display: none;
     align-items: center;
     justify-content: center;
+}
+
+#player1 {
+float: right;
+margin-top: 40px;
+margin-right: 40px;
+}
+
+#player2 {
+float: left;
+margin-top: 40px;
+margin-left: 40px;
 }
 
 #game-board {
@@ -81,4 +91,5 @@ p {
 
 #restartbtn {
     margin-top: 20px;
+    display: none;
 }

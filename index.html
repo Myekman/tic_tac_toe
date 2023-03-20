@@ -31,34 +31,54 @@
 
             <section id="name-section">
                 <div id="name-container">
-                    <input type="text" id="input-name" placeholder="My name is...">
+                    <input type="text" name="username" id="input-name" placeholder="My name is...">
                     <button onclick="start()" type="button" id="start-button">START!</button>
                 </div>
             </section>
         </div>
 
         <section id="game-section">
-                <h1>lets play!</h1>
-                <button id="restartbtn">Restart</button>
-
-            <div id="game-board">
-                <div id="0" class="box"></div>
-                <div id="1" class="box"></div>
-                <div id="2" class="box"></div>
-                <br>
-                <div id="3" class="box"></div>
-                <div id="4" class="box"></div>
-                <div id="5" class="box"></div>
-                <br>
-                <div id="6" class="box"></div>
-                <div id="7" class="box"></div>
-                <div id="8" class="box"></div>
+            <h1>lets play!</h1>
+            <div class="btn">
+            <button id="restartbtn">Play again!</button>
             </div>
+
+            <!-- player 1 information -->
+            <div id="player1">
+                <div>
+                    <h2>Player 1</h2>
+                </div>
+                <div class="score-area">
+                    <span id="player1-score">0</span>
+                </div>
+            </div>
+
+            <!-- Player 2 information-->
+                <div id="player2">
+                    <div id="displayName">
+                        <h2>Username</h2>
+                    </div>
+                    <div class="score-area">
+                        <span id="player-score">0</span>
+                    </div>
+                </div>
+
+                <div id="game-board">
+                    <div id="0" class="box"></div>
+                    <div id="1" class="box"></div>
+                    <div id="2" class="box"></div>
+                    <div id="3" class="box"></div>
+                    <div id="4" class="box"></div>
+                    <div id="5" class="box"></div>
+                    <div id="6" class="box"></div>
+                    <div id="7" class="box"></div>
+                    <div id="8" class="box"></div>
+                </div>
+            </section>
         </section>
-    </section>
 
 
-    <script src="assets/js/script.js"></script>
+        <script src="assets/js/script.js"></script>
 </body>
 
 </html>
