@@ -47,9 +47,10 @@ function start() {
             display = 1;
         }
 
-        gameSection()
         let game=document.querySelector("#game-section");
         game.style.display = "block";
+        let players=document.querySelector("#player-section");
+        players.style.display = "block";
 
         /* Get the username from player and put it to board as player 2 */ 
         let username = document.getElementById("input-name").value;
@@ -62,7 +63,6 @@ function start() {
 
 
 function gameSection() {
-
 
 }
 

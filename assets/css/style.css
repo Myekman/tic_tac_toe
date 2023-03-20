@@ -54,17 +54,21 @@ p {
     justify-content: center;
 }
 
+#player-section {
+    display: none;
+}
+
 .player1-container {
 float: right;
 margin-top: 40px;
-margin-right: 40px;
+margin-right: 80px;
 background-color: red;
 }
 
 .player2-container {
 float: left;
 margin-top: 40px;
-margin-left: 40px;
+margin-left: 80px;
 }
 
 .container {
