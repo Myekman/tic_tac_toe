@@ -13,15 +13,18 @@
 <body>
     <section class="welcome-container">
         <h1 id="winningMessage">Tic Tac Toe</h1>
-        <div id="fist-page">
+
+        <section id="fist-page">
 
             <section id="welcome-section">
-                <div class="choise-container">
-                    <h1>Welcome to Tic Tac Toe! 
+                <div id = "welcome-message">
+                    <h1>Welcome to Tic Tac Toe!
                         <br>
                         Do you want to plat this game?</h1>
-                    <button type="button" onclick="letsPlay()" class="button" id="yes">OFC!</button>
-                    <button type="button" onclick="dontPlay()" class="choise-button" id="no">No way...</button>
+                    </div>
+                <div class="choise-container">
+                    <button type="button" onclick="letsPlay()" class="button" id="yesBtn">OFC!</button>
+                    <button type="button" onclick="dontPlay()" class="choise-button" id="noBtn">No way...</button>
                 </div>
             </section>
 
@@ -37,12 +40,13 @@
                     <input type="text" name="player2" id="input-name2" placeholder="My name is...">
                     <br>
                     <button onclick="start()" type="button" id="start-button">START!</button>
-                </div>
+                </section>
             </section>
-        </div>
 
         <section id="game-section">
+            <div id="letsplay-container">
                 <h1>lets play!</h1>
+            </div>
             <div class="container">
                 <div id="game-board" class="game-board">
                     <div id="0" class="box"></div>
@@ -82,11 +86,12 @@
                     </div>
                 </div>
             </div>
-        </section>
 
-        <div id="restartbtn-container">
-            <button type="button" id="restartbtn">Play again!</button>
-        </div>
+            <!-- Restart button-->
+            <div id="restartbtn-container">
+                <button type="button" id="restartbtn">Play again!</button>
+            </div>
+        </section>
     </section>
 
 

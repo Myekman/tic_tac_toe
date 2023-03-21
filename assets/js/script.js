@@ -1,6 +1,6 @@
 // Get Buttons
-let yesBtn = document.querySelector('#yes')
-let noBtn = document.querySelector('#no')
+let yesBtn = document.querySelector('#yesBtn')
+let noBtn = document.querySelector('#noBtn')
 let restartBtn = document.getElementById('restartbtn')
 
 let winningMessage = document.getElementById('winningMessage')
@@ -12,6 +12,7 @@ let spaces = Array(9).fill(null)
 const O_TEXT = "O"
 const X_TEXT = "X"
 let currentPlayer = X_TEXT
+
 let winningCombos = [
     [0, 1, 2],
     [3, 4, 5],
@@ -22,6 +23,7 @@ let winningCombos = [
     [0, 4, 8],
     [2, 4, 6],
 ];
+let options = ["", "", "", "", "", "", "", "", ""];
 
 /* clicked button to play */
 function letsPlay() {
@@ -52,14 +54,14 @@ function start() {
         alert("please enter your name to play")
 
     } else {
-        let div = document.getElementById("fist-page");
+        let section = document.getElementById("fist-page");
         let display = 0;
 
         if (display == 1) {
-            div.style.display = 'block';
+            section.style.display = 'block';
             display = 0;
         } else {
-            div.style.display = 'none';
+            section.style.display = 'none';
             display = 1;
         }
 
@@ -69,11 +71,13 @@ function start() {
         players.style.display = "block";
 
         /* will display name on player when enter game */
-        let player1= document.getElementById("input-name").value;
+        let player1 = document.getElementById("input-name").value;
         document.getElementById("displayName").innerHTML = `<h2>${player1}</h2>`;
 
         let player2 = document.getElementById("input-name2").value;
         document.getElementById("displayName2").innerHTML = `<h2>${player2}</h2>`;
+
+
     }
 }
 
@@ -92,13 +96,14 @@ function boxClicked(square) {
         spaces[id] = currentPlayer
         square.target.innerText = currentPlayer
 
-        if (playerHasWon()) {
-            winningMessage.textContent = `${currentPlayer} has won!`;
-        }
+
 
         currentPlayer = (currentPlayer == "X") ? "O" : "X";
         winningMessage.textContent = `${currentPlayer}'s turn`;
     }
+
+    let letsplay = document.getElementById('letsplay-container');
+    letsplay.style.display = "none"
 
 }
 
@@ -113,13 +118,35 @@ function restart() {
         box.innerText = ""
     })
 
-    winningMessage = 'Tic Tac Toe'
+    winningMessage.textContent = 'Tic Tac Toe';
     currentPlayer = X_TEXT
+
+    let letsplay = document.getElementById('letsplay-container');
+    letsplay.style.display = "block"
 
 }
 
 function playerHasWon() {
+    let roundWon = false;
 
+    for (let i = 0; i < winningCombos.length; i++) {
+        const condition = winningCombos[i];
+        const cellA = options[condition[0]];
+        const cellB = options[condition[1]];
+        const cellC = options[condition[2]];
+
+        if (cellA == "" || cellB == "" || cellC == "") {
+            continue;
+        }
+        if (cellA == cellB && cellB == cellC) {
+            roundWon = true;
+            break;
+        }
+    }
+    if (roundWon) {
+        winningMessage.textContent = `${currentPlayer} wins!`;
+        running = false;
+    }
 
 }
 
