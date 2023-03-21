@@ -37,6 +37,13 @@ p {
     
 }
 
+#input-name2 {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
 #start-button {
     display: none;
     margin-left: auto;

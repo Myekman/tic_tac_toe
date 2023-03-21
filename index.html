@@ -12,12 +12,14 @@
 
 <body>
     <section class="welcome-container">
-        <h1>Tic Tac Toe</h1>
+        <h1 id="winningMessage">Tic Tac Toe</h1>
         <div id="fist-page">
 
             <section id="welcome-section">
                 <div class="choise-container">
-                    <h1>Welcome to this game, do you dare to play with me?</h1>
+                    <h1>Welcome to Tic Tac Toe! 
+                        <br>
+                        Do you want to plat this game?</h1>
                     <button type="button" onclick="letsPlay()" class="button" id="yes">OFC!</button>
                     <button type="button" onclick="dontPlay()" class="choise-button" id="no">No way...</button>
                 </div>
@@ -31,17 +33,16 @@
 
             <section id="name-section">
                 <div id="name-container">
-                    <input type="text" name="username" id="input-name" placeholder="My name is...">
+                    <input type="text" name="player1" id="input-name" placeholder="My name is...">
+                    <input type="text" name="player2" id="input-name2" placeholder="My name is...">
+                    <br>
                     <button onclick="start()" type="button" id="start-button">START!</button>
                 </div>
             </section>
         </div>
 
         <section id="game-section">
-            <div class="letsplay-container">
                 <h1>lets play!</h1>
-            </div>
-
             <div class="container">
                 <div id="game-board" class="game-board">
                     <div id="0" class="box"></div>
@@ -61,8 +62,8 @@
             <!-- player 1 information -->
             <div class="player1-container">
                 <div id="player1">
-                    <div>
-                        <h2>Player 1</h2>
+                    <div id="displayName2">
+                        <h2>player2</h2>
                     </div>
                     <div class="score-area">
                         <span id="player1-score">0</span>
@@ -74,7 +75,7 @@
             <div class="player2-container">
                 <div id="player2">
                     <div id="displayName">
-                        <h2>Username</h2>
+                        <h2>player1</h2>
                     </div>
                     <div class="score-area">
                         <span id="player-score">0</span>
@@ -83,8 +84,7 @@
             </div>
         </section>
 
-        <div class="winning-message" id="winningMessage">
-            <div data-winning-message-text></div>
+        <div id="restartbtn-container">
             <button type="button" id="restartbtn">Play again!</button>
         </div>
     </section>
