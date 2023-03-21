@@ -1,4 +1,3 @@
-
 /* clicked button to play */
 function letsPlay() {
 
@@ -57,17 +56,31 @@ let spaces = Array(9).fill(null)
 
 const startGame = () => {
     boxes.forEach(box => box.addEventListener('click', boxClicked))
+
 }
 
 function boxClicked(square) {
+    document.getElementById('restartbtn').style.display = "block";
     const id = square.target.id
 
-    if(!spaces[id]){
+    if (!spaces[id]) {
         spaces[id] = currentPlayer
         square.target.innerText = currentPlayer
 
         currentPlayer = currentPlayer == X_TEXT ? O_TEXT : X_TEXT
     }
+
+}
+
+restartBtn.addEventListener('click', restart)
+
+function restart() {
+    spaces.fill(null)
+
+    boxes.forEach( box => {
+        box.innerText = ""
+    })
+    currentPlayer = X_TEXT
 
 }
 
