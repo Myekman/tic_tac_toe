@@ -6,12 +6,15 @@ let restartBtn = document.getElementById('restartbtn')
 let winningMessage = document.getElementById('winningMessage')
 
 // Get array from boxes in gameboard
-let boxes = Array.from(document.getElementsByClassName('box'))
-let spaces = Array(9).fill(null)
+/* let boxes = Array.from(document.getElementsByClassName('box'))
+let spaces = Array(9).fill(null) */
+
+const boxes = document.querySelectorAll('.box');
 
 const O_TEXT = "O"
 const X_TEXT = "X"
 let currentPlayer = X_TEXT
+let running = false;
 
 let winningCombos = [
     [0, 1, 2],
@@ -77,6 +80,9 @@ function start() {
         let player2 = document.getElementById("input-name2").value;
         document.getElementById("displayName2").innerHTML = `<h2>${player2}</h2>`;
 
+        // will Show that is X's turn
+        winningMessage.textContent = `${currentPlayer}'s turn`;
+
 
     }
 }
@@ -85,9 +91,42 @@ function start() {
 
 const startGame = () => {
     boxes.forEach(box => box.addEventListener('click', boxClicked))
+    running = true;
 
 }
 
+function boxClicked() {
+    const cellIndex = this.getAttribute("cellIndex");
+
+    if (options[cellIndex] != "" || !running) {
+        return;
+    }
+    updateCell(this, cellIndex);
+    changePlayer();
+    checkWinner();
+}
+
+
+
+function updateCell(box, index) {
+options[index] = currentPlayer; 
+box.textContent = currentPlayer;
+}
+
+function changePlayer() {
+    currentPlayer = (currentPlayer == "X") ? "O" : "X";
+    winningMessage.textContent = `${currentPlayer}'s turn`;
+ 
+
+}
+
+function checkWinner() {
+
+}
+
+
+
+/* 
 function boxClicked(square) {
     document.getElementById('restartbtn').style.display = "block";
     const id = square.target.id
@@ -105,13 +144,13 @@ function boxClicked(square) {
     let letsplay = document.getElementById('letsplay-container');
     letsplay.style.display = "none"
 
-}
+} */
 
 /* restart buttun will clear the board */
 
-restartBtn.addEventListener('click', restart)
+restartBtn.addEventListener('click', restartGame)
 
-function restart() {
+function restartGame() {
     spaces.fill(null)
 
     boxes.forEach(box => {
