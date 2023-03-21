@@ -166,12 +166,15 @@ Martina Terlevic
 
 And also all awesome people att slack code institute community who are warm and helpful every time. 
 
+Solutions i was inspired of in this videos
+### hide and show using javascript
+https://www.youtube.com/watch?v=-oQnDrNzTTA
+### remove borders i did not want in my gameboard 
+https://www.youtube.com/watch?v=Y-GkMjUZsmM
+
 ## Great sources
 
 https://www.w3schools.com/ 
-
-### Vidoes that helped me true this project
-https://www.youtube.com/watch?v=-oQnDrNzTTA
 
 Image in top that present site in differns devices are made with:
 
