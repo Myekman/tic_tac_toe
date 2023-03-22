@@ -107,6 +107,7 @@ function boxClicked() {
 function updateCell(box, index) {
     options[index] = currentPlayer;
     box.textContent = currentPlayer;
+    
 }
 
 function changePlayer() {

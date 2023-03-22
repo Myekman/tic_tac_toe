@@ -1,5 +1,5 @@
 # Tic Tac Toe 
-Welcome to Tic Tac Toe, this game is made of HTML, CSS and JavaScript. It's a simple game for 2 players 
+Welcome to Tic Tac Toe, this game is made of HTML, CSS and JavaScript. It's a simple game for 2 players and working as a classic Tic Tac Toe game. 
 
 ![IMG]()
 
@@ -85,20 +85,6 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 
 ## Testing 
 
-Here is a list of issues discovered and how they were solved. 
-
-1. The element i wanted to display when clicked on a specific button was showed before.
-*  Solution: Set display non; to css and set .style.display = "block" in javascript. 
-2. The elements of input and button were gone when adding alert message and if statement to javascript.
-*  Solution: Changed the order of if/else in that function.
-3. The game Did'nt start again after restart buttun was clicked.
-*  Solution: Set running to true;
-4. 
-*  
-5. 
-* 
-### Unfixed bugs 
-
 All the bugs were fixed and moved to the section Testing.
 
 ## Manual Testing 
@@ -123,6 +109,21 @@ All the bugs were fixed and moved to the section Testing.
 * The results of Lighthouse testing, see image below.
 
 ![IMG]() ![IMG]() ![IMG]() ![IMG]()
+
+## Bugs 
+
+Here is a list of issues discovered and how they were solved. 
+
+1. The element i wanted to display when clicked on a specific button was showed before.
+*  Solution: Set display non; to css and set .style.display = "block" in javascript. 
+2. The elements of input and button were gone when adding alert message and if statement to javascript.
+*  Solution: Changed the order of if/else in that function.
+3. The game Did'nt start again after restart buttun was clicked.
+*  Solution: Set running to true;
+
+### Unfixed bugs 
+
+All the bugs were fixed and moved to the section Testing.
 
 ## Deployment 
 
