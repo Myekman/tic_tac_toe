@@ -91,6 +91,7 @@ function start() {
 
 const startGame = () => {
     boxes.forEach(box => box.addEventListener('click', boxClicked))
+    restartBtn.addEventListener('click', restartGame);
     running = true;
 
 }
@@ -102,8 +103,9 @@ function boxClicked() {
         return;
     }
     updateCell(this, cellIndex);
-    changePlayer();
     checkWinner();
+
+    document.getElementById('restartbtn').style.display = "block";
 }
 
 
@@ -121,54 +123,9 @@ function changePlayer() {
 }
 
 function checkWinner() {
-
-}
-
-
-
-/* 
-function boxClicked(square) {
-    document.getElementById('restartbtn').style.display = "block";
-    const id = square.target.id
-
-    if (!spaces[id]) {
-        spaces[id] = currentPlayer
-        square.target.innerText = currentPlayer
-
-
-
-        currentPlayer = (currentPlayer == "X") ? "O" : "X";
-        winningMessage.textContent = `${currentPlayer}'s turn`;
-    }
-
-    let letsplay = document.getElementById('letsplay-container');
-    letsplay.style.display = "none"
-
-} */
-
-/* restart buttun will clear the board */
-
-restartBtn.addEventListener('click', restartGame)
-
-function restartGame() {
-    spaces.fill(null)
-
-    boxes.forEach(box => {
-        box.innerText = ""
-    })
-
-    winningMessage.textContent = 'Tic Tac Toe';
-    currentPlayer = X_TEXT
-
-    let letsplay = document.getElementById('letsplay-container');
-    letsplay.style.display = "block"
-
-}
-
-function playerHasWon() {
     let roundWon = false;
 
-    for (let i = 0; i < winningCombos.length; i++) {
+    for (let i = 0; i < winningCombos.length; i++){
         const condition = winningCombos[i];
         const cellA = options[condition[0]];
         const cellB = options[condition[1]];
@@ -182,14 +139,37 @@ function playerHasWon() {
             break;
         }
     }
-    if (roundWon) {
+    if(roundWon){
         winningMessage.textContent = `${currentPlayer} wins!`;
         running = false;
+    }
+    else if(!options.includes("")){
+        winningMessage.textContent = `Draw!`;
+        running = false;
+    }
+    else{
+    changePlayer();
     }
 
 }
 
+/* restart buttun will clear the board */
 
+restartBtn.addEventListener('click', restartGame)
+
+function restartGame() {
+
+    boxes.forEach(box => {
+        box.innerText = ""
+    })
+
+    winningMessage.textContent = 'Tic Tac Toe';
+    currentPlayer = X_TEXT
+
+    let letsplay = document.getElementById('letsplay-container');
+    letsplay.style.display = "block"
+
+}
 
 
 
