@@ -5,15 +5,12 @@ let restartBtn = document.getElementById('restartbtn')
 
 let winningMessage = document.getElementById('winningMessage')
 
-// Get array from boxes in gameboard
-/* let boxes = Array.from(document.getElementsByClassName('box'))
-let spaces = Array(9).fill(null) */
-
+// will get all boxes in gameboard 
 const boxes = document.querySelectorAll('.box');
 
-const O_TEXT = "O"
-const X_TEXT = "X"
-let currentPlayer = X_TEXT
+const Player_1 = "O"
+const Player_2 = "X"
+let currentPlayer = Player_2
 let running = false;
 
 let winningCombos = [
@@ -53,7 +50,7 @@ function dontPlay() {
 }
 /* Enter your name and start game */
 function start() {
-    if (document.getElementById("input-name").value.length == 0 ||  document.getElementById("input-name2").value.length == 0) {
+    if (document.getElementById("input-name").value.length == 0 || document.getElementById("input-name2").value.length == 0) {
         alert("please enter your name to play")
 
     } else {
@@ -110,21 +107,21 @@ function boxClicked() {
 
 
 function updateCell(box, index) {
-options[index] = currentPlayer; 
-box.textContent = currentPlayer;
+    options[index] = currentPlayer;
+    box.textContent = currentPlayer;
 }
 
 function changePlayer() {
     currentPlayer = (currentPlayer == "X") ? "O" : "X";
     winningMessage.textContent = `${currentPlayer}'s turn`;
- 
+
 
 }
 
 function checkWinner() {
     let roundWon = false;
 
-    for (let i = 0; i < winningCombos.length; i++){
+    for (let i = 0; i < winningCombos.length; i++) {
         const condition = winningCombos[i];
         const cellA = options[condition[0]];
         const cellB = options[condition[1]];
@@ -138,17 +135,15 @@ function checkWinner() {
             break;
         }
     }
-    if(roundWon){
+    if (roundWon) {
         winningMessage.textContent = `${currentPlayer} wins!`;
         running = false;
         document.getElementById('restartbtn').style.display = "block";
-    }
-    else if(!options.includes("")){
+    } else if (!options.includes("")) {
         winningMessage.textContent = `Draw!`;
         running = false;
-    }
-    else{
-    changePlayer();
+    } else {
+        changePlayer();
     }
 
 }
@@ -158,13 +153,13 @@ function checkWinner() {
 restartBtn.addEventListener('click', restartGame)
 
 function restartGame() {
-currentPlayer = "O";
-options = ["", "", "", "", "", "", "", "", ""];
-winningMessage.textContent = `${currentPlayer}'s turn`;
-boxes.forEach(box => box.textContent = "");
-running = true;
+    currentPlayer = "O";
+    options = ["", "", "", "", "", "", "", "", ""];
+    winningMessage.textContent = `${currentPlayer}'s turn`;
+    boxes.forEach(box => box.textContent = "");
+    running = true;
 
-document.getElementById('restartbtn').style.display = "none";
+    document.getElementById('restartbtn').style.display = "none";
 
 }
 
