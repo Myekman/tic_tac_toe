@@ -88,6 +88,15 @@ input::placeholder {
 
 }
 
+.back-btn {
+    margin-top: 20px;
+    border: none;
+    background-color: #EE9933;
+    padding: 15px 32px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
 #start-button {
     display: none;
     margin-top: 20px;

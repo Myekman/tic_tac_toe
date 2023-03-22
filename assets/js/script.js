@@ -41,7 +41,16 @@ function letsPlay() {
 /* clicked button not to play */
 function dontPlay() {
     document.getElementById("message").innerHTML = "That's too bad.. Maybee another time!"
+    const messageContainer = document.getElementById('message-container2')
+    const button = document.createElement('button');
+    button.innerText = "Back";
+    button.className = "back-btn";
+    console.log(button)
+    button.addEventListener('click', () => {
+        location.reload();
+    })
 
+    messageContainer.appendChild(button)
     let name = document.querySelector("#name-section");
     name.style.display = "none";
     let welcome = document.querySelector("#welcome-section");
@@ -114,7 +123,6 @@ function changePlayer() {
     currentPlayer = (currentPlayer == "X") ? "O" : "X";
     winningMessage.textContent = `${currentPlayer}'s turn`;
 
-
 }
 
 function checkWinner() {
@@ -147,7 +155,7 @@ function checkWinner() {
             let username2 = document.getElementById("input-name2").value;
             winningMessage.textContent = `The winner is ${username2}!`;
             running = false;
-            document.getElementById('restartbtn').style.display = "block";
+            document.getElementById('restartbtn').style.display = "block"; 
         } 
     } else if (!options.includes("")) {
         winningMessage.textContent = `Draw!`;
@@ -176,7 +184,8 @@ function playeroScore() {
 restartBtn.addEventListener('click', restartGame)
 
 function restartGame() {
-    currentPlayer = "O";
+    // currentPlayer = "O";
+    changePlayer();
     options = ["", "", "", "", "", "", "", "", ""];
     winningMessage.textContent = `${currentPlayer}'s turn`;
     boxes.forEach(box => box.textContent = "");
