@@ -135,11 +135,20 @@ function checkWinner() {
         }
     }
     if (roundWon) {
-        winningMessage.textContent = `${currentPlayer} wins!`;
-        running = false;
-        document.getElementById('restartbtn').style.display = "block";
-        xScore();
-        oScore();
+        let winner = `${currentPlayer}`;
+        if (winner === "X") {
+            playerxScore();
+            let username = document.getElementById("input-name").value;
+            winningMessage.textContent = `The winner is ${username}!`;
+            running = false;
+            document.getElementById('restartbtn').style.display = "block";
+        } else if (winner === "O") {
+            playeroScore();
+            let username2 = document.getElementById("input-name2").value;
+            winningMessage.textContent = `The winner is ${username2}!`;
+            running = false;
+            document.getElementById('restartbtn').style.display = "block";
+        } 
     } else if (!options.includes("")) {
         winningMessage.textContent = `Draw!`;
         running = false;
@@ -150,18 +159,17 @@ function checkWinner() {
 
 }
 
-function xScore() {
+function playerxScore() {
     let oldScore = parseInt(document.getElementById("player2-score").innerText);
     document.getElementById("player2-score").innerText = ++oldScore;
 
 }
 
-function oScore() {
+function playeroScore() {
     let oldScore = parseInt(document.getElementById("player1-score").innerText);
     document.getElementById("player1-score").innerText = ++oldScore;
 
 }
-
 
 /* restart buttun will clear the board */
 
