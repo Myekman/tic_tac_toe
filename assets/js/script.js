@@ -105,7 +105,6 @@ function boxClicked() {
     updateCell(this, cellIndex);
     checkWinner();
 
-    document.getElementById('restartbtn').style.display = "block";
 }
 
 
@@ -142,6 +141,7 @@ function checkWinner() {
     if(roundWon){
         winningMessage.textContent = `${currentPlayer} wins!`;
         running = false;
+        document.getElementById('restartbtn').style.display = "block";
     }
     else if(!options.includes("")){
         winningMessage.textContent = `Draw!`;
@@ -158,16 +158,11 @@ function checkWinner() {
 restartBtn.addEventListener('click', restartGame)
 
 function restartGame() {
-
-    boxes.forEach(box => {
-        box.innerText = ""
-    })
-
-    winningMessage.textContent = 'Tic Tac Toe';
-    currentPlayer = X_TEXT
-
-    let letsplay = document.getElementById('letsplay-container');
-    letsplay.style.display = "block"
+currentPlayer = "X";
+options = ["", "", "", "", "", "", "", "", ""];
+winningMessage.textContent = `${currentPlayer}'s turn`;
+boxes.forEach(box => box.textContent = "");
+running = true;
 
 }
 

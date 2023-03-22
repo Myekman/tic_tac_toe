@@ -54,21 +54,19 @@ What i can do as a visitor to this game:
 
 ## Design 
 
-* Since this is the first webbsite i ever done, the structure and design are inspired of the Love Running Project. 
-*The color palette was at first inspired of the pictures i found at pexels.com. I know i wanted something pink and light from the start. 
+* Since this is the first game in javascript... 
+
 
 ## Wireframes
 
 ## Typography
 
 * The typograpfy was imported from [Google fonts](https://fonts.google.com/) and pasted in style.css file. 
-* For the headings i use [Bebas Neue](https://fonts.google.com/specimen/Bebas+Neue?query=bebas+neue) (Regular 400), with a fallback of Sans-Serif.
-* For the paragraphs and links i use [Bitter](https://fonts.google.com/specimen/Bitter) (Light 300),  with a fallback of Sans-Serif. 
 
 ## Images 
 
-* I chose the images for the clean feel. As they look clean and contain few colors them are easy to match with the rest of the design.
-* Size of images are customized to fit the rest of the page structure. 
+* 
+* 
 
 ## Technologies used:
 * CSS
@@ -78,8 +76,11 @@ What i can do as a visitor to this game:
 ## Features 
 
 ### Logo
+* add images of game here 
 ### Welcome section
+* add imeges here 
 ### Name section
+* add images here 
 
 
 ## Testing 
@@ -117,14 +118,14 @@ All the bugs were fixed and moved to the section Testing.
 
 * Test has been conducted using Google Chrome, Mozilla Firefox and Safari.
 
-![IMG](/assets/images/html-validate.png)
+![IMG]()
 
 * No errors were showed when passing thrue HTML [3Wc Validator](https://jigsaw.w3.org/css-validator/). 
 * All three pages was tested and all passed validator. 
 
 ## CSS
 
-![IMG](/assets/images/W3C-validator1.png)
+![IMG]()
 
 * No errors were showed when passing thrue CSS [Jigsaw Validator](https://jigsaw.w3.org/css-validator/). 
 
@@ -136,9 +137,9 @@ All the bugs were fixed and moved to the section Testing.
 
 ## Deployment 
 
-The development environment used for this webbsite was GitPod. In GitPod a template enviorment was used provided by Code Institute.
+The development environment used for this game was GitPod. In GitPod a template enviorment was used provided by Code Institute.
 
-Regular commits and pushes to GitHub have been implemented to save through  development.
+Regular commits and pushes to GitHub have been implemented to save through development.
 
 The procedure for deployment was followed by the video from Love Running. 
 
@@ -150,13 +151,12 @@ The procedure for deployment was followed by the video from Love Running.
 6. The website will deploy and the link to live webbsite will be ready when refresh the page. 
 
 ## Content
-* All text content on this site has been produced by the author of the project and is fictional. There is no Strong Gymnastic Studio in real life. 
-* All CSS and HTML is ispired of the Love Running project, HTML and CSS Essentials and from [w3schools](https://www.w3schools.com/tags/tag_em.asp).  
-* The social media icons in the footer was taken from [Font Awesome](https://fontawesome.com/icons/dumbbell?s=solid&f=classic).
+*  The Content of javascript file was influenced of diffrent youtube videos, i have linked them in credits. 
+* [Font Awesome](https://fontawesome.com/icons/dumbbell?s=solid&f=classic).
 
 ## Media
 
-* All images was downloaded from [pexels](https://www.pexels.com/).
+Images ? 
 
 ## Credits 
 
@@ -166,11 +166,11 @@ Martina Terlevic
 
 And also all awesome people att slack code institute community who are warm and helpful every time. 
 
-Solutions i was inspired of in this videos
-### hide and show using javascript
+### This videos inspired me 
+
 https://www.youtube.com/watch?v=-oQnDrNzTTA
-### remove borders i did not want in my gameboard 
 https://www.youtube.com/watch?v=Y-GkMjUZsmM
+https://www.youtube.com/watch?v=AnmwHjpEhtA&t=922s
 
 ## Great sources
 
