@@ -53,7 +53,7 @@ function dontPlay() {
 }
 /* Enter your name and start game */
 function start() {
-    if (document.getElementById("input-name").value.length == 0) {
+    if (document.getElementById("input-name").value.length == 0 ||  document.getElementById("input-name2").value.length == 0) {
         alert("please enter your name to play")
 
     } else {
@@ -75,10 +75,10 @@ function start() {
 
         /* will display name on player when enter game */
         let player1 = document.getElementById("input-name").value;
-        document.getElementById("displayName").innerHTML = `<h2>${player1}</h2>`;
+        document.getElementById("displayName").innerHTML = `<h2>${player1}</h2>play's:`;
 
         let player2 = document.getElementById("input-name2").value;
-        document.getElementById("displayName2").innerHTML = `<h2>${player2}</h2>`;
+        document.getElementById("displayName2").innerHTML = `<h2>${player2}</h2>play's:`;
 
         // will Show that is X's turn
         winningMessage.textContent = `${currentPlayer}'s turn`;
@@ -158,11 +158,13 @@ function checkWinner() {
 restartBtn.addEventListener('click', restartGame)
 
 function restartGame() {
-currentPlayer = "X";
+currentPlayer = "O";
 options = ["", "", "", "", "", "", "", "", ""];
 winningMessage.textContent = `${currentPlayer}'s turn`;
 boxes.forEach(box => box.textContent = "");
 running = true;
+
+document.getElementById('restartbtn').style.display = "none";
 
 }
 

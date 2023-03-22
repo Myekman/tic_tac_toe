@@ -7,8 +7,9 @@
 
 body {
     text-align: center;
-    font-family: "IBM+Plex+Mono" sans-serif;
+    font-family: "IBM+Plex+Mono"sans-serif;
     font-size: 20px;
+    background-color: #0E939A;
 }
 
 /* Welcome page */
@@ -22,13 +23,14 @@ h1 {
 
 p {
     margin-top: 30px;
-    
+
 }
 
 .welcome-container {
-    height: 800px;
-    width: 800px;
-    background-color: aqua;
+    height: 900px;
+    width: 900px;
+    border-radius: 4px;
+    background-color: #12E2DB;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
@@ -48,7 +50,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    
+
 }
 
 #input-name2 {
@@ -56,13 +58,13 @@ p {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    
+
 }
 
 #yesBtn {
     margin-top: 20px;
     border: none;
-    background-color: orange;
+    background-color: #EE9933;
     padding: 15px 32px;
     font-size: 20px;
     border-radius: 4px;
@@ -73,7 +75,7 @@ p {
 #noBtn {
     margin-top: 20px;
     border: none;
-    background-color: orange;
+    background-color: #EE9933;
     padding: 15px 32px;
     font-size: 20px;
     border-radius: 4px;
@@ -87,37 +89,69 @@ p {
     margin-left: auto;
     margin-right: auto;
     border: none;
-    background-color: orange;
+    background-color: #EE9933;
     padding: 15px 32px;
     font-size: 20px;
     border-radius: 4px;
 
 
 }
-
-/* Game Section */
-#game-section {
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
+/* Player section */
 
 #player-section {
     display: none;
 }
 
-.player1-container {
-float: right;
-margin-top: 100px;
-margin-right: 80px;
-background-color: red;
+
+#player2 {
+    float: left;
+    margin-top: 100px;
+    margin-left: 80px;
+
+    width: 200px;
+    height: 200px;
+
 }
 
-.player2-container {
-float: left;
-margin-top: 100px;
-margin-left: 80px;
+#player1 {
+    float: right;
+    margin-top: 100px;
+    margin-right: 80px;
 
+    width: 200px;
+    height: 200px;
+}
+
+.displayName-container {
+    font-size: 30px;
+}
+
+/* #symbol-x {
+    font-size: 50px;
+    margin-top: 30;
+}
+
+#symbol-o {
+    font-size: 50px;
+    margin-top: 30;
+}
+*/
+
+.symbol-container {
+    font-size: 50px;
+    margin-top: 30;
+}
+
+.scoreArea-container {
+    font-size: 30px;
+
+}
+/* Gameboard */ 
+
+#game-section {
+    display: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
@@ -144,7 +178,7 @@ margin-left: 80px;
     justify-content: center;
     line-height: 95px;
     cursor: pointer;
-   
+
 }
 
 .box:first-child,
@@ -176,7 +210,7 @@ margin-left: 80px;
     margin-right: auto;
 
     border: none;
-    background-color: orange;
+    background-color: #EE9933;
     padding: 15px 32px;
     font-size: 20px;
     border-radius: 4px;

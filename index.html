@@ -63,26 +63,36 @@
         </section>
 
         <section id="player-section">
-            <!-- player 1 information -->
+            <!-- player 1 information to right -->
             <div class="player1-container">
                 <div id="player1">
-                    <div id="displayName2">
-                        <h2>player2</h2>
+                    <div class="displayName-container" id="displayName2">
+                        <h2>player1</h2>
                     </div>
-                    <div class="score-area">
-                        <span id="player1-score">0</span>
+                    <div class="symbol-container" id="symbol-x">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                    <div class="scoreArea-container" id="score-area1">
+                        <p>Score
+                            <span id="player1-score">0</span>
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <!-- Player 2 information-->
+            <!-- Player 2 information to left-->
             <div class="player2-container">
                 <div id="player2">
-                    <div id="displayName">
-                        <h2>player1</h2>
+                    <div class="displayName-container" id="displayName">
+                        <h2>player2</h2>
                     </div>
-                    <div class="score-area">
-                        <span id="player-score">0</span>
+                    <div class="symbol-container" id="symbol-o">
+                        <i class="fa-solid fa-o"></i>
+                    </div>
+                    <div class="scoreArea-container" id="score-area2">
+                        <p>Score
+                            <span id="player2-score">0</span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -94,6 +104,8 @@
         </section>
     </section>
 
+    <!-- font awesome script-->
+    <script src="https://kit.fontawesome.com/f56f5ae272.js" crossorigin="anonymous"></script>
 
     <script src="assets/js/script.js"></script>
 </body>
