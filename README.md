@@ -1,5 +1,5 @@
 # Tic Tac Toe 
-This game......
+Welcome to Tic Tac Toe, this game is made of HTML, CSS and JavaScript. It's a simple game for 2 players 
 
 ![IMG]()
 
@@ -32,6 +32,7 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 * [HTML Validator](#html "HTML")
 * [CSS Validator](#css "CSS")
 * [Lighthouse](#lighthouse "Lighthouse")
+* [JavaScript Validator](#javascript "JavaScript")
 
 ### Develop and Deployment
 
@@ -42,19 +43,18 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 
 ## User Stories
 
-What i can do as a visitor to this game:
-
 * Choise if i want to start game or not.
 * If yes, i can enter my Name to start play.
 * If no, i can change my mind and return to enter my name. 
 * As a player, I want to be notified on who wins and see the final result.
 * As a player, I want to be able to start a new game.
+* As a player, I want to se my name when enter game. 
 * As a player, I want to be able to play the game on different devices and screen sizes. 
 
 
 ## Design 
 
-* Since this is the first game in javascript... 
+* The design is simple since there is few features in this game. Therefore I chose strong colors in my colorscheme. Both background and playing field are colored in different shades os blue. To remove the feeling that the page is not so full.
 
 
 ## Wireframes
@@ -87,23 +87,16 @@ What i can do as a visitor to this game:
 
 Here is a list of issues discovered and how they were solved. 
 
-1. The link to get to form section didnt work. 
-*  Solution: Addthe"#" to a href=#form-section. 
-2. Images in gymnastic studios section disapered when i styled the page to smaller screen sizes. 
-*  Solution: I set the float to left for the image in the middle from margin: 0 auto. 
-3. Images was shown just at its bottom.
-*  Solution: Set the background-position to center. 
-4. The contet i wanted to add above images in gymnastic gruops section didnt show up.
-*  Solution: Change to right section id. 
-5. Poor performance on smaller screens.
-* Solution: Fixed by using by media queries. 
-6. The circle image beside the form that is floated to left, didn't appear to the right as att wished. 
-* Solution: set the clear attribute to none. 
-7. The sign upp here link didn't work from classes.html page.
-* Solution: Added form section to classes.html page and the link was working. 
-8. Apart from these problems i have had a ton of small ones. It can be for example that contet not fall in the right place i wish for.
-* It has been solved with attribute of example: padding, margin, float, text-align.
-
+1. The element i wanted to display when clicked on a specific button was showed before.
+*  Solution: Set display non; to css and set .style.display = "block" in javascript. 
+2. The elements of input and button were gone when adding alert message and if statement to javascript.
+*  Solution: Changed the order of if/else in that function.
+3. The game Did'nt start again after restart buttun was clicked.
+*  Solution: Set running to true;
+4. 
+*  
+5. 
+* 
 ### Unfixed bugs 
 
 All the bugs were fixed and moved to the section Testing.
@@ -112,28 +105,24 @@ All the bugs were fixed and moved to the section Testing.
 * Add text here of manuel testing
 
 ## Testing with validator
+
+### JavaScript 
+* The code was passed through JSHint for testing, and no errors were found. There were a few warnings. 
+
 ### HTML 
-
-* Testing of the site has been done several times during this project. To ensure that the page is suitable for different screen sizes, I have used Google DevTools and Also with: [Am I Responsive](https://ui.dev/amiresponsive).
-
-* Test has been conducted using Google Chrome, Mozilla Firefox and Safari.
-
-![IMG]()
 
 * No errors were showed when passing thrue HTML [3Wc Validator](https://jigsaw.w3.org/css-validator/). 
 * All three pages was tested and all passed validator. 
 
-## CSS
-
-![IMG]()
+### CSS
 
 * No errors were showed when passing thrue CSS [Jigsaw Validator](https://jigsaw.w3.org/css-validator/). 
 
-## Lighthouse 
+### Lighthouse 
 
-![IMG](/assets/images/lighthouse1.png)
+* The results of Lighthouse testing, see image below.
 
-* The results of Lighthouse testing above.
+![IMG]() ![IMG]() ![IMG]() ![IMG]()
 
 ## Deployment 
 
@@ -151,12 +140,8 @@ The procedure for deployment was followed by the video from Love Running.
 6. The website will deploy and the link to live webbsite will be ready when refresh the page. 
 
 ## Content
-*  The Content of javascript file was influenced of diffrent youtube videos, i have linked them in credits. 
-* [Font Awesome](https://fontawesome.com/icons/dumbbell?s=solid&f=classic).
-
-## Media
-
-Images ? 
+*  The Content of javascript file was influenced of love maths project and from diffrent youtube videos, i have linked them in credits. 
+* the circle and X images was taken from [Font Awesome](https://fontawesome.com/icons/dumbbell?s=solid&f=classic).
 
 ## Credits 
 
@@ -175,6 +160,7 @@ https://www.youtube.com/watch?v=AnmwHjpEhtA&t=922s
 ## Great sources
 
 https://www.w3schools.com/ 
+https://stackoverflow.com/?newreg=3583f84a5bfa4452b918dc819119ce0c 
 
 Image in top that present site in differns devices are made with:
 

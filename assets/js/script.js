@@ -27,7 +27,6 @@ let options = ["", "", "", "", "", "", "", "", ""];
 
 /* clicked button to play */
 function letsPlay() {
-
     document.getElementById("message").innerHTML = "Thats fun! Enter your name to start"
     let name = document.querySelector("#name-section");
     name.style.display = "block";
@@ -48,6 +47,7 @@ function dontPlay() {
     let welcome = document.querySelector("#welcome-section");
     welcome.style.display = "none";
 }
+
 /* Enter your name and start game */
 function start() {
     if (document.getElementById("input-name").value.length == 0 || document.getElementById("input-name2").value.length == 0) {
@@ -103,8 +103,6 @@ function boxClicked() {
     checkWinner();
 
 }
-
-
 
 function updateCell(box, index) {
     options[index] = currentPlayer;
