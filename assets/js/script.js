@@ -45,7 +45,7 @@ function dontPlay() {
     const button = document.createElement('button');
     button.innerText = "Back";
     button.className = "back-btn";
-    console.log(button)
+    button.style.fontSize = "20px"
     button.addEventListener('click', () => {
         location.reload();
     })
@@ -104,6 +104,7 @@ const startGame = () => {
 
 function boxClicked() {
     const cellIndex = this.getAttribute("cellIndex");
+    this.style.backgroundColor = (currentPlayer == "X") ? "red" : "blue";
 
     if (options[cellIndex] != "" || !running) {
         return;
@@ -116,13 +117,11 @@ function boxClicked() {
 function updateCell(box, index) {
     options[index] = currentPlayer;
     box.textContent = currentPlayer;
-    
 }
 
 function changePlayer() {
     currentPlayer = (currentPlayer == "X") ? "O" : "X";
     winningMessage.textContent = `${currentPlayer}'s turn`;
-
 }
 
 function checkWinner() {
