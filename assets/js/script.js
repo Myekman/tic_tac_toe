@@ -42,26 +42,26 @@ function letsPlay() {
 function dontPlay() {
     document.getElementById("message").innerHTML = "That's too bad.. Maybee another time!"
     const messageContainer = document.getElementById('message-container2')
+    /* create back button to reload page */
     const button = document.createElement('button');
     button.innerText = "Back";
     button.className = "back-btn";
-    button.style.fontSize = "20px"
     button.addEventListener('click', () => {
         location.reload();
     })
-
     messageContainer.appendChild(button)
+
     let name = document.querySelector("#name-section");
     name.style.display = "none";
     let welcome = document.querySelector("#welcome-section");
     welcome.style.display = "none";
 }
 
-/* Enter your name and start game */
+/* if input fields are empty, alert message of please enter your name */
 function start() {
     if (document.getElementById("input-name").value.length == 0 || document.getElementById("input-name2").value.length == 0) {
         alert("please enter your name to play")
-
+/* if input fields are filled, display first page to none */
     } else {
         let section = document.getElementById("fist-page");
         let display = 0;
@@ -73,28 +73,26 @@ function start() {
             section.style.display = 'none';
             display = 1;
         }
-
+        
         let game = document.querySelector("#game-section");
         game.style.display = "block";
         let players = document.querySelector("#player-section");
         players.style.display = "block";
 
-        /* will display name on player when enter game */
+        /* will display name on players when enter game */
         let player1 = document.getElementById("input-name").value;
         document.getElementById("displayName").innerHTML = `<h2>${player1}</h2>play's:`;
 
         let player2 = document.getElementById("input-name2").value;
         document.getElementById("displayName2").innerHTML = `<h2>${player2}</h2>play's:`;
 
-        // will Show that is X's turn
+        /* will Show that is X's turn */
         winningMessage.textContent = `${currentPlayer}'s turn`;
-
 
     }
 }
 
 /* Start game when clicking on board */
-
 const startGame = () => {
     boxes.forEach(box => box.addEventListener('click', boxClicked))
     restartBtn.addEventListener('click', restartGame);
@@ -117,16 +115,18 @@ function boxClicked() {
 function updateCell(box, index) {
     options[index] = currentPlayer;
     box.textContent = currentPlayer;
+
 }
 
+/* will change player to be every other x and o */
 function changePlayer() {
     currentPlayer = (currentPlayer == "X") ? "O" : "X";
     winningMessage.textContent = `${currentPlayer}'s turn`;
 }
 
+/* will check when winning is true */
 function checkWinner() {
     let roundWon = false;
-
     for (let i = 0; i < winningCombos.length; i++) {
         const condition = winningCombos[i];
         const cellA = options[condition[0]];
@@ -141,6 +141,7 @@ function checkWinner() {
             break;
         }
     }
+    /* will display winner */
     if (roundWon) {
         let winner = `${currentPlayer}`;
         if (winner === "X") {
@@ -154,8 +155,10 @@ function checkWinner() {
             let username2 = document.getElementById("input-name2").value;
             winningMessage.textContent = `The winner is ${username2}!`;
             running = false;
+            /* restartbutton will show when end game */
             document.getElementById('restartbtn').style.display = "block";
         }
+        /* if no winner its a draw */
     } else if (!options.includes("")) {
         winningMessage.textContent = `Draw!`;
         running = false;
@@ -166,12 +169,14 @@ function checkWinner() {
 
 }
 
+/* will get score to player x if wins */
 function playerxScore() {
     let oldScore = parseInt(document.getElementById("player2-score").innerText);
     document.getElementById("player2-score").innerText = ++oldScore;
 
 }
 
+/* will get score to player o if wins */
 function playeroScore() {
     let oldScore = parseInt(document.getElementById("player1-score").innerText);
     document.getElementById("player1-score").innerText = ++oldScore;
@@ -179,7 +184,6 @@ function playeroScore() {
 }
 
 /* restart buttun will clear the board */
-
 restartBtn.addEventListener('click', restartGame)
 
 function restartGame() {
@@ -190,11 +194,8 @@ function restartGame() {
     boxes.forEach(box => box.style.backgroundColor = "");
     running = true;
 
-
     document.getElementById('restartbtn').style.display = "none";
 
 }
-
-
 
 startGame()

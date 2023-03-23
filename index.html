@@ -11,29 +11,33 @@
 </head>
 
 <body>
+
     <section class="welcome-container">
         <h1>Tic Tac Toe</h1>
 
+        <!-- first page section displayed when enter site-->
         <section id="fist-page">
-
             <section id="welcome-section">
                 <div id="welcome-message">
-                    <p>Welcome to Tic Tac Toe!
+                    <p>Welcome to Tic Tac Toe!</p>
+                    <p>
+                        This is a game for two intelligent bambinos
                         <br>
-                        Do you want to play this game?</p>
+                        Do you think it will be fun to play this game?
+                    </p>
                 </div>
                 <div class="choise-container">
-                    <button type="button" onclick="letsPlay()" class="button" id="yesBtn">OFC!</button>
+                    <button type="button" onclick="letsPlay()" class="button" id="yesBtn">Yey!</button>
                     <button type="button" onclick="dontPlay()" class="choise-button" id="noBtn">No way...</button>
                 </div>
             </section>
-
+            <!--This section will show if you click noBtn-->
             <section id="message-section">
                 <div id="message-container2">
                     <p id="message"></p>
                 </div>
             </section>
-
+            <!--This section will show if you click yesBtn-->
             <section id="name-section">
                 <div id="name-container">
                     <input type="text" name="player1" id="input-name" placeholder="My name is...">
@@ -42,7 +46,7 @@
                     <button onclick="start()" type="button" id="start-button">START!</button>
             </section>
         </section>
-
+        <!--The game will show when you click start-button-->
         <section id="game-section">
             <div id="letsplay-container">
                 <h1 id="winningMessage">lets play!</h1>
@@ -63,7 +67,7 @@
         </section>
 
         <section id="player-section">
-            <!-- player 1 information to right -->
+            <!-- player 1 information to right-->
             <div class="player1-container">
                 <div id="player1">
                     <div class="displayName-container" id="displayName2">
@@ -80,7 +84,7 @@
                 </div>
             </div>
 
-            <!-- Player 2 information to left-->
+            <!-- Player 2 information to left -->
             <div class="player2-container">
                 <div id="player2">
                     <div class="displayName-container" id="displayName">
