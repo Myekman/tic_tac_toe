@@ -1,5 +1,6 @@
 # Tic Tac Toe 
-Welcome to Tic Tac Toe, this game is made of HTML, CSS and JavaScript. It's a simple game for 2 players and working as a classic Tic Tac Toe game. 
+Welcome to Tic Tac Toe! This is a simple game for 2 players and working as a classic Tic Tac Toe game. The target audience is children from 5 years of age since this is a easy game to follow. Its a perfect way for kids to practice logically thinking. 
+It's also fun to challenge each other time and time again. Because there is a scorekeeper who keeps track of who has won the most times. In order for it to be fair and for the loser to have a chance for rematch, the Loser will start each new round.
 
 ![IMG]()
 
@@ -8,7 +9,7 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 # Table of content
 
 ### Wireframes
-* [Wireframed](#wireframes "Wireframes")
+* [Wireframes](#wireframes "Wireframes")
 
 ### List of features:
 
@@ -54,7 +55,7 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 
 ## Design 
 
-* The design is simple since there is few features in this game. Therefore I chose strong colors in my colorscheme. Both background and playing field are colored in different shades os blue. To remove the feeling that the page is not so full.
+* The design is simple and clean but with strong and happy colors since the game is made for kids in first place and i want them to be happy and inpired when playing. 
 
 
 ## Wireframes
@@ -62,6 +63,7 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 ## Typography
 
 * The typograpfy was imported from [Google fonts](https://fonts.google.com/) and pasted in style.css file. 
+* The fonts i used: Righteous and IBM+Plex+Mono.
 
 ## Images 
 
@@ -84,8 +86,6 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 
 
 ## Testing 
-
-All the bugs were fixed and moved to the section Testing.
 
 ## Manual Testing 
 * Add text here of manuel testing
@@ -120,10 +120,12 @@ Here is a list of issues discovered and how they were solved.
 *  Solution: Changed the order of if/else in that function.
 3. The game Did'nt start again after restart buttun was clicked.
 *  Solution: Set running to true;
+4. I made different background colors for player X and player O when playing, but when i clicked the same box twice, the color changed again.
+* Solution: 
 
 ### Unfixed bugs 
 
-All the bugs were fixed and moved to the section Testing.
+All the bugs were fixed and moved to the section Bugs.
 
 ## Deployment 
 
@@ -142,7 +144,8 @@ The procedure for deployment was followed by the video from Love Running.
 
 ## Content
 *  The Content of javascript file was influenced of love maths project and from diffrent youtube videos, i have linked them in credits. 
-* the circle and X images was taken from [Font Awesome](https://fontawesome.com/icons/dumbbell?s=solid&f=classic).
+* The content of html and css was planned with wireframes and then made by testing and trying different solutions along the way. Some parts were also inspired by youtube videos. For example how to remove border-bottom, top, right and left in my gameboard. that video is also linked in the credits.
+* The circle and X images was taken from [Font Awesome](https://fontawesome.com/icons/dumbbell?s=solid&f=classic).
 
 ## Credits 
 
