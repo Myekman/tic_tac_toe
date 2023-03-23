@@ -154,8 +154,8 @@ function checkWinner() {
             let username2 = document.getElementById("input-name2").value;
             winningMessage.textContent = `The winner is ${username2}!`;
             running = false;
-            document.getElementById('restartbtn').style.display = "block"; 
-        } 
+            document.getElementById('restartbtn').style.display = "block";
+        }
     } else if (!options.includes("")) {
         winningMessage.textContent = `Draw!`;
         running = false;
@@ -188,7 +188,9 @@ function restartGame() {
     options = ["", "", "", "", "", "", "", "", ""];
     winningMessage.textContent = `${currentPlayer}'s turn`;
     boxes.forEach(box => box.textContent = "");
+    boxes.forEach(box => box.style.backgroundColor = "");
     running = true;
+
 
     document.getElementById('restartbtn').style.display = "none";
 
