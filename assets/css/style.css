@@ -27,7 +27,7 @@ p {
 }
 
 .welcome-container {
-    height: 900px;
+    height: 1000px;
     width: 900px;
     border-radius: 4px;
     background-color: #12E2DB;
@@ -123,7 +123,10 @@ input::placeholder {
     margin-left: 80px;
 
     width: 200px;
-    height: 200px;
+    height: 250px;
+    background-color: #EE9933;
+    border-radius: 4px;
+    opacity: 0.9;
 
 }
 
@@ -133,7 +136,10 @@ input::placeholder {
     margin-right: 80px;
 
     width: 200px;
-    height: 200px;
+    height: 250px;
+    background-color: #0E939A;
+    border-radius: 4px;
+    opacity: 0.9;
 }
 
 .displayName-container {
@@ -177,6 +183,7 @@ input::placeholder {
     width: 100px;
     border: #3D3D3D 1px solid;
     font-size: 50px;
+    font-family: "Righteous", sans-serif; 
     text-align: center;
     justify-content: center;
     line-height: 95px;
