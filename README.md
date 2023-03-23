@@ -32,14 +32,13 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 * [Manual Testning](#manual-testing "Manual Testing")
 * [HTML Validator](#html "HTML")
 * [CSS Validator](#css "CSS")
-* [Lighthouse](#lighthouse "Lighthouse")
 * [JavaScript Validator](#javascript "JavaScript")
+* [Lighthouse](#lighthouse "Lighthouse")
 
 ### Develop and Deployment
 
 * [Deployment](#deployment "Deployment")
 * [Content](#content "Content")
-* [Media](#media "Media")
 * [Credits](#credits "Credits")
 
 ## User Stories
