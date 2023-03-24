@@ -102,7 +102,7 @@ const startGame = () => {
 
 function boxClicked() {
     const cellIndex = this.getAttribute("cellIndex");
-    this.style.backgroundColor = (currentPlayer == "X") ? "#EE9933" : "#0E939A";
+    this.style.backgroundColor = (currentPlayer == "X") ? "#1ce8c3" : "#ffb4b4";
 
     if (options[cellIndex] != "" || !running) {
         return;
@@ -122,6 +122,7 @@ function updateCell(box, index) {
 function changePlayer() {
     currentPlayer = (currentPlayer == "X") ? "O" : "X";
     winningMessage.textContent = `${currentPlayer}'s turn`;
+    
 }
 
 /* will check when winning is true */

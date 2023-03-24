@@ -9,13 +9,12 @@ body {
     min-height: 100vh;
     text-align: center;
     font-size: 30px;
-    /* background-color: #0E939A; */
+    background-color: #f7cc99;
     font-family: 'Architects Daughter', sans-serif;
 
 }
 
 /* Welcome page */
-
 h1 {
     padding-top: 30px;
     font-family: "Righteous", sans-serif;
@@ -30,44 +29,18 @@ p {
 
 .welcome-container {
     height: 1200px;
-    /* width: 900px; */
-    /* border-radius: 4px; */
-    /* background-color: #12E2DB; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    /* margin-top: 60px; */
-    /* box-shadow: 10px 10px 10px #3D3D3D; */
+    margin-top: 70px;
 }
 
-#message-section {
-    margin-top: 100px;
+#fist-page {
+    margin-top: 60px;
 }
-
 #welcome-message {
-    margin-top: 100px;
+    margin: 60px 10px 20px 10px;
 }
 
-/* elements displayed after clicked OFC button */
-
-input {
-    display: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-
-    height: 40px;
-    background-color: #0E939A;
-    border: none;
-    border-radius: 4px;
-
-}
-
-input::placeholder {
-    font-weight: bold;
-    font-size: 15px;
-    color: white;
-    color: #12E2DB;
-    padding-left: 10px;
+#welcome-message p {
+    line-height: 90px;
 }
 
 #yesBtn {
@@ -76,11 +49,11 @@ input::placeholder {
     border: none;
     font-family: 'Architects Daughter', sans-serif;
     background-color: #EE9933;
+    color: #ffffff;
     padding: 15px 32px;
     font-size: 20px;
     border-radius: 4px;
     box-shadow: 5px 5px 5px #3D3D3D;
-
 
 }
 
@@ -90,23 +63,34 @@ input::placeholder {
     border: none;
     font-family: 'Architects Daughter', sans-serif;
     background-color: #EE9933;
+    color: #ffffff;
     padding: 15px 32px;
     font-size: 20px;
     border-radius: 4px;
     box-shadow: 5px 5px 5px #3D3D3D;
-
 
 }
 
-.back-btn {
-    margin-top: 20px;
+/* elements displayed after clicked yey button */
+input {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+    height: 40px;
+    background-color: #ffffff;
     border: none;
-    font-family: 'Architects Daughter', sans-serif;
-    background-color: #EE9933;
-    padding: 15px 32px;
-    font-size: 20px;
     border-radius: 4px;
-    box-shadow: 5px 5px 5px #3D3D3D;
+
+}
+
+input::placeholder {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    color: #EE9933;
+    padding-left: 10px;
 }
 
 #start-button {
@@ -117,12 +101,26 @@ input::placeholder {
     border: none;
     font-family: 'Architects Daughter', sans-serif;
     background-color: #EE9933;
+    color: #ffffff;
     padding: 15px 32px;
     font-size: 20px;
     border-radius: 4px;
     box-shadow: 5px 5px 5px #3D3D3D;
 
+}
 
+/* element showed after clicking no button */
+/* back button was created in js file */
+.back-btn {
+    margin-top: 20px;
+    border: none;
+    font-family: 'Architects Daughter', sans-serif;
+    background-color: #EE9933;
+    color: #ffffff;
+    padding: 15px 32px;
+    font-size: 20px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px #3D3D3D;
 }
 
 /* Player section */
@@ -131,17 +129,15 @@ input::placeholder {
     display: none;
 }
 
-
 #player2 {
     float: left;
     margin-left: 200px;
     margin-top: 15px;
     width: 200px;
     height: 200px;
-    background-color: #EE9933;
+    background-color: #ffffff;
     border-radius: 4px;
     opacity: 0.9;
-    box-shadow: 10px 10px 10px #3D3D3D;
 
 }
 
@@ -151,10 +147,18 @@ input::placeholder {
     margin-right: 200px;
     width: 200px;
     height: 200px;
-    background-color: #0E939A;
+    background-color: #ffffff;
     border-radius: 4px;
     opacity: 0.9;
-    box-shadow: 10px 10px 10px #3D3D3D;
+
+}
+
+#player1 i {
+    color: #ffb4b4;
+}
+
+#player2 i {
+    color: #1CE8C3;
 }
 
 .displayName-container {
@@ -172,7 +176,6 @@ input::placeholder {
 }
 
 /* Gameboard */
-
 #game-section {
     display: none;
     align-items: center;
@@ -229,17 +232,15 @@ input::placeholder {
 
 }
 
+/* restart button */
 .button-section {
     margin-top: 50px;
     
 }
 
 #restartbtn-container {
-    /* width: 200px; */
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 200px; */
-    /* clear: both; */
 
 }
 
@@ -251,7 +252,8 @@ input::placeholder {
     font-family: 'Architects Daughter', sans-serif;
 
     border: none;
-    background-color: #EE9933;
+    background-color: #ffffff;
+    color: #EE9933;
     padding: 15px 32px;
     font-size: 20px;
     border-radius: 4px;
@@ -274,14 +276,7 @@ input::placeholder {
 
     }
 
-    .button-section {
-        /* margin-top: 300px; */
-        
-    }
-
-
 }
-
 
 /* for screen sizes from 900px wide and down */
 @media screen and (max-width: 900px) {
@@ -313,11 +308,6 @@ input::placeholder {
     .scoreArea-container {
         /* font-size: 15px; */
         margin-top: 2px;
-    }
-
-    .button-section {
-        /* margin-top: 300px; */
-        
     }
 
 }
