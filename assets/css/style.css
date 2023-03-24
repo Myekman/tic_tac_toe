@@ -8,7 +8,7 @@
 body {
     min-height: 100vh;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     background-color: #f7cc99;
     font-family: 'Architects Daughter', sans-serif;
 
@@ -20,6 +20,10 @@ h1 {
     font-family: "Righteous", sans-serif;
     font-size: 40px;
 
+}
+
+h2 {
+    font-size: 30px;
 }
 
 p {
@@ -51,7 +55,6 @@ p {
     border: none;
     font-family: 'Architects Daughter', sans-serif;
     background-color: #EE9933;
-    color: #ffffff;
     padding: 15px 32px;
     font-size: 20px;
     border-radius: 4px;
@@ -65,7 +68,6 @@ p {
     border: none;
     font-family: 'Architects Daughter', sans-serif;
     background-color: #EE9933;
-    color: #ffffff;
     padding: 15px 32px;
     font-size: 20px;
     border-radius: 4px;
@@ -103,7 +105,6 @@ input::placeholder {
     border: none;
     font-family: 'Architects Daughter', sans-serif;
     background-color: #EE9933;
-    color: #ffffff;
     padding: 15px 32px;
     font-size: 20px;
     border-radius: 4px;
@@ -118,7 +119,6 @@ input::placeholder {
     border: none;
     font-family: 'Architects Daughter', sans-serif;
     background-color: #EE9933;
-    color: #ffffff;
     padding: 15px 32px;
     font-size: 20px;
     border-radius: 4px;
@@ -164,17 +164,17 @@ input::placeholder {
 }
 
 .displayName-container {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .symbol-container {
-    font-size: 40px;
+    font-size: 50px;
     margin-top: 5px;
 }
 
 .scoreArea-container {
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 25px;
+    margin-top: -30px;
 }
 
 /* Gameboard */
@@ -237,13 +237,9 @@ input::placeholder {
 /* restart button */
 .button-section {
     margin-top: 50px;
-    
-}
-
-#restartbtn-container {
     margin-left: auto;
     margin-right: auto;
-
+    
 }
 
 #restartbtn {
@@ -296,20 +292,6 @@ input::placeholder {
         margin-top: 60px;
         width: 180px;
         height: 180px;
-    }
-
-    .displayName-container {
-        /* font-size: 15px; */
-    }
-
-    .symbol-container {
-        font-size: 35px;
-        margin-top: 2px;
-    }
-
-    .scoreArea-container {
-        /* font-size: 15px; */
-        margin-top: 2px;
     }
 
 }
