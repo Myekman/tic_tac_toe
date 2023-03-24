@@ -23,8 +23,6 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 * [Requirements](#requirements "Requirements")
 * [Design](#design "Design")
 * [Typography](#typography "Typography")
-* [Images](#images "Images")
-
 
 ### List of testing
 
@@ -54,20 +52,14 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 
 ## Design 
 
-* The design is simple and clean but with strong and happy colors since the game is made for kids in first place and i want them to be happy and inpired when playing. 
-
+* The design is simple and clean but with strong and happy colors since the game is made for kids in first place and i want them to be happy and inspired when playing. 
 
 ## Wireframes
 
 ## Typography
 
 * The typograpfy was imported from [Google fonts](https://fonts.google.com/) and pasted in style.css file. 
-* The fonts i used: Righteous and IBM+Plex+Mono.
-
-## Images 
-
-* 
-* 
+* The fonts i used: Righteous and Architects Daughter.
 
 ## Technologies used:
 * CSS
@@ -97,7 +89,6 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 ### HTML 
 
 * No errors were showed when passing thrue HTML [3Wc Validator](https://jigsaw.w3.org/css-validator/). 
-* All three pages was tested and all passed validator. 
 
 ### CSS
 
@@ -105,7 +96,7 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 
 ### Lighthouse 
 
-* The results of Lighthouse testing, see image below.
+* The results of Lighthouse testing, see image of all test below.
 
 ![IMG]() ![IMG]() ![IMG]() ![IMG]()
 
@@ -119,12 +110,10 @@ Here is a list of issues discovered and how they were solved.
 *  Solution: Changed the order of if/else in that function.
 3. The game Did'nt start again after restart buttun was clicked.
 *  Solution: Set running to true;
-4. I made different background colors for player X and player O when playing, but when i clicked the same box twice, the color changed again.
-* Solution: 
 
 ### Unfixed bugs 
-
-All the bugs were fixed and moved to the section Bugs.
+I made different background colors for player X and player O when playing, but when i clicked the same box twice, the color changed again. My mentor gave me tips on how to fixed but unfortunately that did'nt work out. 
+This is a bug that has not been fixed before submitting. 
 
 ## Deployment 
 
@@ -154,9 +143,8 @@ Martina Terlevic
 
 And also all awesome people att slack code institute community who are warm and helpful every time. 
 
-### This videos inspired me 
+### This videos inspired me strongly
 
-https://www.youtube.com/watch?v=-oQnDrNzTTA
 https://www.youtube.com/watch?v=Y-GkMjUZsmM
 https://www.youtube.com/watch?v=AnmwHjpEhtA&t=922s
 
