@@ -101,19 +101,19 @@ const startGame = () => {
 }
 
 function boxClicked() {
-    const cellId = this.getAttribute("id");
+    const boxId = this.getAttribute("id");
     this.style.backgroundColor = (currentPlayer == "X") ? "#1ce8c3" : "#ffb4b4";
 
-    if (options[cellId] != "" || !running) {
+    if (options[boxId] != "" || !running) {
         return;
     }
-    updateCell(this, cellId);
+    updateCell(this, boxId);
     checkWinner();
 
 }
 
-function updateCell(box, cellId) {
-    options[cellId] = currentPlayer;
+function updateCell(box, boxId) {
+    options[boxId] = currentPlayer;
     box.textContent = currentPlayer;
 
 }

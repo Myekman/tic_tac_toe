@@ -107,9 +107,10 @@ If you leave the name input field empty, this alert message ask you to fill in u
 Usernames of players is showed in score section for each player. 
 ## Winner 
 ![IMG](/assets/images/tac6.png)
-A winning message is displayed when X or O got hree in a row, and at same time the restart button is displayed. 
+A winning message is displayed when X or O got three in a row, and at same time the restart button is displayed. 
 ## Score 
 ![IMG](/assets/images/tac8.png)
+<br>
 Score section counting points for the winner. 
 ## Draw
 ![IMG](/assets/images/tac7.png)
@@ -172,9 +173,9 @@ I have made different background colors for player X and player O when the playe
 
 The development environment used for this game was GitPod. In GitPod a template enviorment was used provided by Code Institute.
 
-Regular commits and pushes to GitHub have been implemented to save through development.
+Regular commits and pushes to GitHub have been implemented and saved through development.
 
-The procedure for deployment was followed by the video from Love Running. 
+The procedure for deployment: 
 
 1. Log into GitHub.
 2. Find the Repository that you want to deploy live.
@@ -210,7 +211,7 @@ Martina Terlevic
 
 * My fantastic mentor at Code Institute
 
-And also all awesome people att slack code institute community who are warm and helpful every time. 
+And also my family that encouraged me and gave me all time i needed to make this project the best i could. 
 
 ### This videos inspired me strongly
 
