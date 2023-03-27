@@ -13,9 +13,14 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 
 ### List of features:
 
-* [Logo](#logo "Logo")
-* [Welcome section](#welcome-section "Welcome section")
-* [Name section](#name-section "Name section")
+* [Logo/first page](#Logo/first page "Logo/first page")
+* [Don't Play](#dontplay "Don't Play")
+* [Let's Play ](#letsplay  "Let's Play ")
+* [Alert message](#alertmessage "Alert message")
+* [Game section](#gamesection  "Game section")
+* [Winner showed](#winnershowed "Winner showed")
+* [Score](#score "Score")
+* [Draw](#draw "Draw")
 
 ### UX/UI:
 
@@ -70,15 +75,22 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 
 ## Features 
 
-### Logo
-* add images of game here 
-### Welcome section
-* add imeges here 
-### Name section
-* add images here 
-
-
-## Testing 
+## Logo/first page
+![IMG](/assets/images/tac1.png)
+## Don't Play
+![IMG](/assets/images/tac2.png)
+## Let's Play 
+![IMG](/assets/images/tac3.png)
+## Alert message 
+![IMG](/assets/images/tac4.png)
+## Game section 
+![IMG](/assets/images/tac5.png)
+## Winner showed
+![IMG](/assets/images/tac6.png)
+## Score 
+![IMG](/assets/images/tac8.png)
+## Draw
+![IMG](/assets/images/tac7.png)
 
 ## Manual Testing 
 1. Both buttons on first page is working as they should.
@@ -101,11 +113,11 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 ## Testing with validator
 
 ### JavaScript 
-* The code was passed through JSHint for testing, and no errors were found. There were a few warnings. 
+* The code was passed through JSHint for testing, and no errors were found, but there were warnings. 
 
 ### HTML 
-
-* No errors were showed when passing thrue HTML [3Wc Validator](https://jigsaw.w3.org/css-validator/). 
+* Error was showed first time i run the validator. I had attribute of cellindex inside all my div's in gameboard. I changed the cellindex to id's instead in all div's. 
+* After fixed errors no errors were showed when passing thrue HTML [3Wc Validator](https://jigsaw.w3.org/css-validator/). 
 
 ### CSS
 
@@ -113,7 +125,7 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 
 ### Lighthouse 
 
-* The results of Lighthouse testing, see image of all test below.
+* The results of Lighthouse testing, see image below.
 
 ![IMG](/assets/images/lighthouse_tictactoe.png)
 
@@ -125,8 +137,10 @@ Here is a list of issues discovered and how they were solved.
 *  Solution: Set display non; to css and set .style.display = "block" in javascript. 
 2. The elements of input and button were gone when adding alert message and if statement to javascript.
 *  Solution: Changed the order of if/else in that function.
-3. The game Did'nt start again after restart buttun was clicked.
+3. The game did'nt start again after restart buttun was clicked.
 *  Solution: Set running to true;
+4. The html validator complained about cellindex inside my divs.
+* Solution: Change cellindex to id's. 
 
 ### Unfixed bugs 
 I made different background colors for player X and player O when playing, but when i clicked the same box twice, the color changed again. My mentor gave me tips on how to fixed but unfortunately that did'nt work out. 
@@ -151,14 +165,14 @@ The procedure for deployment was followed by the video from Love Running.
 
 To fork the respository:
 * Log in or sign up to GitHub. 
-* Go to the repository for this project: [Tic Tac Toe]()
+* Go to the repository for this project: [Tic Tac Toe](#tic-tac-toe "Tic Tac Toe")
 * Click the Fork button in the top right corner.
 
 ### How to clone
 
 To clone repository:
 * Log in or sign up to GitHub. 
-*  Go to the repository for this project: [Tic Tac Toe]()
+*  Go to the repository for this project: [Tic Tac Toe](#tic-tac-toe "Tic Tac Toe")
 * Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 * Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 * Type 'git clone' into the terminal and then paste the link you copied in step 3 and press enter. 

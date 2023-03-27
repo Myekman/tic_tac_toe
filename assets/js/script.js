@@ -101,19 +101,19 @@ const startGame = () => {
 }
 
 function boxClicked() {
-    const cellIndex = this.getAttribute("cellIndex");
+    const cellId = this.getAttribute("id");
     this.style.backgroundColor = (currentPlayer == "X") ? "#1ce8c3" : "#ffb4b4";
 
-    if (options[cellIndex] != "" || !running) {
+    if (options[cellId] != "" || !running) {
         return;
     }
-    updateCell(this, cellIndex);
+    updateCell(this, cellId);
     checkWinner();
 
 }
 
-function updateCell(box, index) {
-    options[index] = currentPlayer;
+function updateCell(box, cellId) {
+    options[cellId] = currentPlayer;
     box.textContent = currentPlayer;
 
 }
@@ -142,6 +142,7 @@ function checkWinner() {
             break;
         }
     }
+
     /* will display winner */
     if (roundWon) {
         let winner = `${currentPlayer}`;
