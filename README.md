@@ -1,7 +1,7 @@
 # Tic Tac Toe 
 Welcome to Tic Tac Toe! 
 <br>
-This is a simple game for 2 players and working as a classic Tic Tac Toe game. 
+This is a simple game for 2 players.
 <br>
 The target audience is children from 5 years of age. Since this is a easy game to follow. Its a perfect way for kids to practice logically thinking. 
 It's also fun to challenge each other time and time again.
@@ -24,7 +24,7 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 * [Let's Play ](#let's-play  "Let's Play ")
 * [Alert message](#alert-message "Alert message")
 * [Game section](#game-section  "Game section")
-* [Winner showed](#winner-showed "Winner showed")
+* [Winner](#winner "Winner")
 * [Score](#score "Score")
 * [Draw](#draw "Draw")
 
@@ -52,6 +52,8 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 * [How to clone](#how-to-clone "How to clone")
 
 ## User Stories
+
+As a player, i want to:
 
 * Choise if i want to start game or not.
 * If yes, i can enter my Name to start play.
@@ -90,20 +92,28 @@ Design game to look good on all screen sizes with [Balsamiq]("https://balsamiq.c
 
 ## Logo/first page
 ![IMG](/assets/images/tac1.png)
+This is the first features in game.
 ## Don't Play
 ![IMG](/assets/images/tac2.png)
+If you click button "no way" this is showed.
 ## Let's Play 
 ![IMG](/assets/images/tac3.png)
+If you click button "yey" this is showed and you are asked to fill in name of players to start game.
 ## Alert message 
 ![IMG](/assets/images/tac4.png)
+If you leave the name input field empty, this alert message ask you to fill in usernames.
 ## Game section 
 ![IMG](/assets/images/tac5.png)
-## Winner showed
+Usernames of players is showed in score section for each player. 
+## Winner 
 ![IMG](/assets/images/tac6.png)
+A winning message is displayed when X or O got hree in a row, and at same time the restart button is displayed. 
 ## Score 
 ![IMG](/assets/images/tac8.png)
+Score section counting points for the winner. 
 ## Draw
 ![IMG](/assets/images/tac7.png)
+When all boxes is filled without a winner, its a draw.
 
 ## Manual Testing 
 1. Both buttons on first page is working as they should.
@@ -156,7 +166,7 @@ Here is a list of issues discovered and how they were solved.
 * Solution: Change cellindex to id's. 
 
 ### Unfixed bugs 
-I have made different background colors for player X and player O when the players click on board, but when i clicked the same box twice, the color changed again. My mentor gave me tips on how to fixed but unfortunately that did'nt work out and i have not figure it out yet. So this is a bug that has not been fixed before submitting. 
+I have made different background colors for player X and player O when the players click on board, but when i clicked the same box twice, the color changed again. My mentor gave me tips on how to fix it but unfortunately that did'nt work out and i have not figure it out yet. So this is a bug that has not been fixed before submitting. 
 
 ## Deployment 
 
