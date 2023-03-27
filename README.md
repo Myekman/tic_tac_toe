@@ -2,7 +2,7 @@
 Welcome to Tic Tac Toe! This is a simple game for 2 players and working as a classic Tic Tac Toe game. The target audience is children from 5 years of age since this is a easy game to follow. Its a perfect way for kids to practice logically thinking. 
 It's also fun to challenge each other time and time again. Because there is a scorekeeper who keeps track of who has won the most times. In order for it to be fair and for the loser to have a chance for rematch, the Loser will start each new round.
 
-![IMG]()
+![IMG](/assets/images/tictactoe_responsive.png)
 
 A live version of this game can be found here! [Tic Tac Toe](https://myekman.github.io/tic_tac_toe/)
 
@@ -53,6 +53,8 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 ## Design 
 
 * The design is simple and clean but with strong and happy colors since the game is made for kids in first place and i want them to be happy and inspired when playing. 
+### Color sheme:
+![IMG](/assets/images/tictactoe_colorsheme.png)
 
 ## Wireframes
 
@@ -79,7 +81,22 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 ## Testing 
 
 ## Manual Testing 
-* Add text here of manuel testing
+1. Both buttons on first page is working as they should.
+- "yey" button takes the visitor to --> enter name of player 1 and 2 to start game. 
+- "no way.." button takes visitor to a message and back button. 
+2. When i try to enter game without enter a name, i got an alert of "please enter your name to play". Its working for both input fields, i have to fill in names of all players before continue.
+3. The Back button works, it reaload the page when clicked. 
+4. The gameboard show when i have enter 2 players. In score section it shows 2 names of Maja and Lisa. which I filled in when enter game.
+5. When i click on board, X and backgroundcolor is showed in that clicked box. It also got a message of x's turn above the playboard. 
+6. When X have clicked on board, it shows message of o's turn. 
+7. O clickes on board and O is shown in that box clicked, also a backgroundcolor of pink. 
+8. I continued tp play and O wins, shows a winning message of "The winner is Lisa". 
+9. Restart button is showed at same time. When clicking on that button the board is set to emty again. 
+10. In the score Area, the Player O (Lisa) got 1 score and Maja still got 0 score. 
+11. If nobody wins it shows a message of "draw!" and restart button is showed. 
+12. You can play again as many times you want to. 
+
+13. The game is looking good on all screen sizes. 
 
 ## Testing with validator
 
@@ -98,7 +115,7 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 
 * The results of Lighthouse testing, see image of all test below.
 
-![IMG]() ![IMG]() ![IMG]() ![IMG]()
+![IMG](/assets/images/lighthouse_tictactoe.png)
 
 ## Bugs 
 
@@ -129,6 +146,22 @@ The procedure for deployment was followed by the video from Love Running.
 4. Click "Pages" to the left in menu. 
 5. The ”Source” should be "deploy from branch". Then choose Branch as ”main” and "root" as folder and click ”Save”.
 6. The website will deploy and the link to live webbsite will be ready when refresh the page. 
+
+### How to fork
+
+To fork the respository:
+* Log in or sign up to GitHub. 
+* Go to the repository for this project: [Tic Tac Toe]()
+* Click the Fork button in the top right corner.
+
+### How to clone
+
+To clone repository:
+* Log in or sign up to GitHub. 
+*  Go to the repository for this project: [Tic Tac Toe]()
+* Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+* Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+* Type 'git clone' into the terminal and then paste the link you copied in step 3 and press enter. 
 
 ## Content
 *  The Content of javascript file was influenced of love maths project and from diffrent youtube videos, i have linked them in credits. 
