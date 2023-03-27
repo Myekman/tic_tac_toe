@@ -63,6 +63,10 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 
 ## Wireframes
 
+Design game to look good on all screen sizes with [Balsamiq]("https://balsamiq.com/wireframes/desktop/docs/overview/")
+
+![IMG](/assets/images/wireframe13.png)
+
 ## Typography
 
 * The typograpfy was imported from [Google fonts](https://fonts.google.com/) and pasted in style.css file. 
@@ -203,6 +207,9 @@ https://stackoverflow.com/?newreg=3583f84a5bfa4452b918dc819119ce0c
 Image in top that present site in differns devices are made with:
 
 http://ami.responsivedesign.is/
+
+Wireframes made with: 
+[Balsamiq]("https://balsamiq.com/wireframes/desktop/docs/overview/")
 
 Best Regards 
 
