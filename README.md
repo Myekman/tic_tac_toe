@@ -1,6 +1,12 @@
 # Tic Tac Toe 
-Welcome to Tic Tac Toe! This is a simple game for 2 players and working as a classic Tic Tac Toe game. The target audience is children from 5 years of age since this is a easy game to follow. Its a perfect way for kids to practice logically thinking. 
-It's also fun to challenge each other time and time again. Because there is a scorekeeper who keeps track of who has won the most times. In order for it to be fair and for the loser to have a chance for rematch, the Loser will start each new round.
+Welcome to Tic Tac Toe! 
+<br>
+This is a simple game for 2 players and working as a classic Tic Tac Toe game. 
+<br>
+The target audience is children from 5 years of age. Since this is a easy game to follow. Its a perfect way for kids to practice logically thinking. 
+It's also fun to challenge each other time and time again.
+<br>
+There is a scorekeeper who keeps track of who has won the most times. In order for it to be fair and for the loser to have a chance for rematch, the Loser will start each new round.
 
 ![IMG](/assets/images/tictactoe_responsive.png)
 
@@ -13,12 +19,12 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 
 ### List of features:
 
-* [Logo/first page](#Logo/first page "Logo/first page")
-* [Don't Play](#dontplay "Don't Play")
-* [Let's Play ](#letsplay  "Let's Play ")
-* [Alert message](#alertmessage "Alert message")
-* [Game section](#gamesection  "Game section")
-* [Winner showed](#winnershowed "Winner showed")
+* [Logo first page](#Logofirstpage "Logo/first page")
+* [Don't Play](#don't-play "Don't Play")
+* [Let's Play ](#let's-play  "Let's Play ")
+* [Alert message](#alert-message "Alert message")
+* [Game section](#game-section  "Game section")
+* [Winner showed](#winner-showed "Winner showed")
 * [Score](#score "Score")
 * [Draw](#draw "Draw")
 
@@ -31,7 +37,6 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 
 ### List of testing
 
-* [Testing](#testing "Testing")
 * [Manual Testning](#manual-testing "Manual Testing")
 * [HTML Validator](#html "HTML")
 * [CSS Validator](#css "CSS")
@@ -43,6 +48,8 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 * [Deployment](#deployment "Deployment")
 * [Content](#content "Content")
 * [Credits](#credits "Credits")
+* [How to fork](#how-to-fork "How to fork")
+* [How to clone](#how-to-clone "How to clone")
 
 ## User Stories
 
@@ -65,7 +72,9 @@ A live version of this game can be found here! [Tic Tac Toe](https://myekman.git
 
 Design game to look good on all screen sizes with [Balsamiq]("https://balsamiq.com/wireframes/desktop/docs/overview/")
 
-![IMG](/assets/images/wireframe13.png)
+![IMG](/assets/images/wireframe1.png)
+![IMG](/assets/images/Wireframe2.png)
+![IMG](/assets/images/wireframe3.png)
 
 ## Typography
 
@@ -147,8 +156,7 @@ Here is a list of issues discovered and how they were solved.
 * Solution: Change cellindex to id's. 
 
 ### Unfixed bugs 
-I made different background colors for player X and player O when playing, but when i clicked the same box twice, the color changed again. My mentor gave me tips on how to fixed but unfortunately that did'nt work out. 
-This is a bug that has not been fixed before submitting. 
+I have made different background colors for player X and player O when the players click on board, but when i clicked the same box twice, the color changed again. My mentor gave me tips on how to fixed but unfortunately that did'nt work out and i have not figure it out yet. So this is a bug that has not been fixed before submitting. 
 
 ## Deployment 
 
